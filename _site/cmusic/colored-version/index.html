@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cmusic - A Musical Visualization</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="Description" content="A Musical Visualization of Bach's Prelude in C Major." />
+	<meta property="og:title" content="CMUSIC.MIKERIV.COM" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://cmusic.mikeriv.com" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content="CMUSIC.MIKERIV.COM" />
+	<meta property="og:description" content="A Musical Visualization of J.S. Bach's Prelude in C Major"/>
+  		
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>	
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" type="text/css" />
+  	<link href='http://fonts.googleapis.com/css?family=Niconne|Marck+Script' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		var PIECE_NUMBER = 1;
+	</script>
+	
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js-sm2/soundmanager2.js"></script>
+	<script type="text/javascript" src="js/active-tab.js"></script>
+	<script type="text/javascript" src="js/song-data.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/balls.js"></script>
+	<link href="css/flashblock.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="init()" class="piece1">
+ <div id="sm2-container"></div>
+	<div id="main-layer"> 
+    	<canvas id="main-canvas" class="piece1"></canvas>
+	</div>
+	<div id="title" class="centered-box"></div>
+	<div id="visual-title" class="centered-box"></div>
+	<div id="paused" class="centered-box"></div>
+	<div id="loader" class="centered-box"></div>
+
+	<div id="framerate"></div>
+	<div id="about">
+		<a id='help-launcher' href="javascript:void(0);">Help - (?) </a>
+	</div>
+=
+	<!-- In your HTML: -->
+	<div id="error">(Your browser does not support canvas)</div>
+	<div id="help-dialog" title="Cmusic: Visualizing Musical Relationships">
+		<span id="help-title" class="center-align"></span>
+		<br>
+		<div id="help-description">
+			<h3>Summary.</h3><br>
+			<p>Cmusic approaches music visually, but it is not your standard iTunes visualizer. It digs deeper, demonstrating the dynamics of a piece while revealing relationships among individual notes. Through motion, speed, size, and color, the intracacies of music are easily explained. Complexity becomes simplicity. We demonstrate this transformation by visualizing <a id="sheet-link" href="http://www.mikeriv.com/downloads/cmusic/J.S.Bach_ Prelude_In_C_Major.pdf" target="_blank">J.S. Bach's Prelude in C Major</a>.
+			</p><br><br>
+			<h3>Rules to Visualize By.</h3><br>
+			<p>
+				Each individual tone of the piece is represented by a single colored circle, or a Note-Circle. Using the mathematics behind the frequency of pitch, we derive the vertical falling speed of a particular Note-Circle. The higher the pitch of the note, the faster the speed of the note-circle's movement.
+			</p><br>
+			<p>
+				All Note-Circles upon first generation have the same radius. However, as the piece progresses and we begin to uncover the pitches which bound the piece together, the radius of a particular pitch's Note-Circle increases on every re-generation. In this manner, we highlight the subtleties of notes not in the musical key of C Major or that are less visited, introducing the dependency of the piece on certain notes.<br><div class="center-align"> <img id="frequency-image" src="images/freq.png"></div>
+			</p><br>
+			<p>
+				Note-Circles are generated in a left-to-right manner with the sounding of a pitch. We define the width of the left-to-right motion to be an eight note sequence representing the individual 8-note phrases of the Prelude.
+			</p><br>
+			<p> 
+				As a Note-Circle falls, it progressively become more transparent, signifying the relationship of pitches fading after their initial sounding from a piano.
+			</p><br>
+			<p> 
+				When a crucial dynamic in the piece begins to surface, we visualize this through a altering a Note-Circle's path to spin in a circular motion. In this example, the turning point occurs as heavy bass notes take reigns of the piece and begin to wind the sound upwards until it reaches a resolution.
+			</p><br>
+
+
+		</div>
+
+	</div>
+</body>
+</html>
