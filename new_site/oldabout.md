@@ -1,7 +1,6 @@
 ---
 layout: page
-title: about
-permalink: /about/
+permalink: /test/
 ---
 
 <img class="col one right" src="/img/prof_pic.jpg">
