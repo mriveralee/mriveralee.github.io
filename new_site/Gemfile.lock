@@ -25,7 +25,6 @@ GEM
       faraday_middleware (>= 0.9)
       loofah (>= 2.0)
       sax-machine (>= 1.0)
-    feedzirra (0.8.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
@@ -186,8 +185,6 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (1.11.1)
-    rss-feed (0.8.2)
-      feedzirra
     safe_yaml (1.0.4)
     sass (3.5.1)
       sass-listen (~> 4.0.0)
@@ -213,7 +210,7 @@ PLATFORMS
 DEPENDENCIES
   feedjira
   github-pages
-  rss-feed
+  jekyll-theme-primer
 
 BUNDLED WITH
    1.15.3
