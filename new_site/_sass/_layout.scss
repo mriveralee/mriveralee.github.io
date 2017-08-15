@@ -122,8 +122,24 @@ font-size: 60px;
 display:block;
 margin: 10px;
 }
+#cv-icon {
+  background: $theme-color;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-right: 11px;
+  padding-left: 11px;
+  margin-bottom: 2px;
+  border-radius: 9px;
+  font-size: 35px;
+  color: white;
+}
+
 .center{
 text-align: center;
+}
+
+.vert-middle {
+  vertical-align: middle;
 }
 /**
  * Posts  **********************************************************

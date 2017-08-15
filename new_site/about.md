@@ -27,11 +27,21 @@ permalink: /about/
 	<hr/>
 	<br/>
 	<span class="contacticon center">
-		<a href="mailto:mike@mikeriv.com" title="Email"><i class="fa fa-envelope-square"></i></a>
-		<a href="https://github.com/mriveralee" target="_blank" title="Github"><i class="fa fa-github-square"></i></a>
-		<a href="http://www.mikeriv.com/downloads/RIVERA_MICHAEL_CV.pdf" target="_blank" title="Resume/CV"><i class="fa fa-file-text-o"></i></a>
-		<a href="https://www.linkedin.com/in/mikeriv" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square"></i></a>
-		<a href="https://twitter.com/mriveralee" target="_blank" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+		<a href="mailto:{{site.email}}" title="Email">
+      <i class="vert-middle fa fa-envelope-square"></i>
+    </a>
+		<a href="https://github.com/{{site.github_username}}" target="_blank" title="Github">
+      <i class="vert-middle fa fa-github-square"></i>
+    </a>
+		<a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">
+      <i id="cv-icon" class="vert-middle fa fa-file-text-o"></i>
+    </a>
+		<a href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" title="LinkedIn">
+      <i class="vert-middle fa fa-linkedin-square"></i>
+    </a>
+		<a href="https://twitter.com/{{site.twitter_username}}" target="_blank" title="Twitter">
+      <i class="vert-middle fa fa-twitter-square"></i>
+    </a>
 	</span>
 
 	<div class="col three caption">
