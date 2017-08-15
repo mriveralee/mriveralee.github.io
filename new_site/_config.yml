@@ -3,7 +3,7 @@ title: Michael L. Rivera
 email: mike@mikeriv.com
 description: > # this means to ignore newlines until "baseurl:"
   3rd Year PhD Student in Human-Computer Interaction
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl:  /new_site # the subpath of your site, e.g. /blog/
 url:  http://wwww.mikeriv.com # the base hostname & protocol for your site
 twitter_username: mriveralee
 github_username:  mriveralee
@@ -18,8 +18,9 @@ highlighter: rouge
 timezone: America/New_York
 
 sass:
-    sass_dir: ./_scss
-    
+    sass_dir: _sass
+    style: compressed
+
 feed:
   path: feed.xml
 

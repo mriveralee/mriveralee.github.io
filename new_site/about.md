@@ -12,7 +12,7 @@ permalink: /about/
 <div class="post">
   <article class="post-content">
 
-	<img class="col one right" src="/img/self/me_440x440.jpg">
+	<img class="col one right" src="{{site.baseurl}}/img/self/me_440x440.jpg">
 
 	<br/>
 	Michael Rivera is a PhD student advised by Scott Hudson at the Human-Computer Interaction Institute of Carnegie Mellon University. His research interests focus on novel fabrication techniques and computational design for Human-Computer Interaction.  
