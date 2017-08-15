@@ -3,7 +3,7 @@ layout: default
 permalink: /about/
 ---
 <div class="header-bar">
-  <h1>Michael L. Rivera</h1>
+  <h1 style="font-weight: 400;">Michael L. Rivera</h1>
   <h2 style="line-height:3.0em">HCI Researcher in Fabrication &amp; Computational Design</h2>
   <hr>
 </div>
