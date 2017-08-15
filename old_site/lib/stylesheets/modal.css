@@ -1,0 +1,41 @@
+/* line 1, sass/modal.sass */
+#lean_overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: black;
+  display: none;
+}
+
+/* line 11, sass/modal.sass */
+#old-browser-dialog {
+  width: 600px;
+  padding: 30px;
+  display: none;
+  background: #f8f8f8;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.7);
+  color: #444444;
+  font-size: 15px;
+}
+/* line 24, sass/modal.sass */
+#old-browser-dialog h3 {
+  color: #444444;
+}
+/* line 26, sass/modal.sass */
+#old-browser-dialog a {
+  color: #d20053;
+  text-decoration: none;
+}
+/* line 29, sass/modal.sass */
+#old-browser-dialog a:visited, #old-browser-dialog a:hover {
+  text-decoration: underline;
+  outline: 0;
+}
