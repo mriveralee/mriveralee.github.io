@@ -5,6 +5,10 @@ permalink: /music/
 hidden: true
 ---
 
+<p>
+A professor of fine arts once told me that my style of drawing was "very tired and worked". I think my music has those qualities too. Like drawing, I started learning how to play and sing in college without much formal training. The music I make sounds rough, but one could argue that gives it some character.
+</p>
+
 {% include music/soundcloud.md %}
 <!--
 {% for project in site.portfolio %}
