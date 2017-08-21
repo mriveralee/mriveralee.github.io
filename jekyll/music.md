@@ -5,6 +5,8 @@ permalink: /music/
 hidden: true
 ---
 
+{% include music/soundcloud.md %}
+<!--
 {% for project in site.portfolio %}
 
 {% if project.redirect %}
@@ -45,4 +47,4 @@ hidden: true
 
 {% endif %}
 
-{% endfor %}
+{% endfor %} -->
