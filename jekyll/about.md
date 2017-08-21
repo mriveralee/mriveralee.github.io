@@ -21,8 +21,6 @@ permalink: /about/
 	<br/>
 	<br/>
 	<br/>
-	<br/>
-	<br/>
 	<hr/>
 	<span class="contacticon center">
 		<a href="mailto:{{site.email}}" title="Email">
