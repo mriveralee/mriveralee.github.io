@@ -39,22 +39,6 @@ permalink: /about/
       <i class="vert-middle fa fa-twitter-square"></i>
     </a>
 	</span>
-	<!-- <div class="col three caption">
-    <div class="center" style="padding-left: 10px; padding-right: 10px;">
-      <span id="random-quote" style="display: inline-block; text-align: left; line-height: 125%;"></span>
-    </div>
-    <script type="text/javascript">
-    (function() {
-      // Pick a random quote and go have fun!
-      var quotes = {{ site.data.favorite_quotes.quotes | jsonify }};
-      var randomIndex = Math.floor(Math.random() * quotes.length);
-      var quotePair = quotes[randomIndex];
-      var $quoteContainer = document.getElementById('random-quote');
-      $quoteContainer.innerHTML = "\"" + quotePair.quote + "\"" + " – " + quotePair.author;
-    })();
-    </script>
-	</div> -->
-
   </article>
 
 </div>
