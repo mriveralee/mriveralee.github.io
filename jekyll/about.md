@@ -41,8 +41,8 @@ permalink: /about/
       <i class="vert-middle fa fa-twitter-square"></i>
     </a>
 	</span>
-	<div class="col three caption">
-    <div class="center">
+	<!-- <div class="col three caption">
+    <div class="center" style="padding-left: 10px; padding-right: 10px;">
       <span id="random-quote" style="display: inline-block; text-align: left; line-height: 125%;"></span>
     </div>
     <script type="text/javascript">
@@ -55,7 +55,7 @@ permalink: /about/
       $quoteContainer.innerHTML = "\"" + quotePair.quote + "\"" + " – " + quotePair.author;
     })();
     </script>
-	</div>
+	</div> -->
 
   </article>
 

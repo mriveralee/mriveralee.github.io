@@ -14,6 +14,17 @@ width:100%;
 z-index: 50;
 }
 
+.header-title {
+  float: right;
+  margin-left: 4px;
+  padding: 2px;
+  line-height: 53px;
+  display: block;
+  @include media-query($on-small-screen) {
+    display:none;
+  }
+}
+
 .site-title {
 font-size: 20px;
 line-height: $nav-height;
@@ -105,14 +116,14 @@ color: $theme-color;
  * Page content   **********************************************************
  */
 .page-content {
-padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ // was 100px 0
-padding-bottom: 20px;
+padding: 100px 0 0 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ // was 100px 0
+padding-bottom: 0;
 }
 
 .page-content-less-padding {
-padding: 60px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ // was 100px 0
-padding-bottom: 20px;
+padding: 60px 0 0 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ // was 100px 0
 }
+
 .page-heading {
 font-size: 20px;
 }
