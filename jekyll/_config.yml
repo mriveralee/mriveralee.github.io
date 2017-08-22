@@ -12,6 +12,16 @@ linkedin_username: mikeriv
 path_to_cv: /downloads/RIVERA_MICHAEL_CV.pdf
 path_to_research: /research/
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      includedInNav: false
+      layout: page
+
+assetsDir: /assets/
+
 # Build settings
 markdown: kramdown
 highlighter: rouge

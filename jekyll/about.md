@@ -2,6 +2,7 @@
 layout: default-less-padding
 title: about
 permalink: /about/
+includedInNav: true
 ---
 {% include big-name-header.html %}
 

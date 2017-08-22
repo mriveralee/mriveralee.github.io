@@ -2,7 +2,6 @@
 layout: page
 title: music
 permalink: /music/
-hidden: true
 ---
 
 <p>
