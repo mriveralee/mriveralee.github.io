@@ -220,6 +220,23 @@ font-size: 16px;
     }
 }
 
+/** Research Formatting *****************************************/
+.research-title {
+font-size: 18px;
+letter-spacing: -1px;
+line-height: 1;
+margin-bottom: 10px;
+@include media-query($on-laptop) {
+font-size: 16px;
+    }
+}
+.research-meta {
+font-size: $small-font-size;
+color: $grey-color;
+margin-bottom: 0px;
+margin-top: 4px;
+}
+
 
 /**
  * Portfolio grid **********************************************************
@@ -308,6 +325,38 @@ width: 66.66%;
 .three{
 width: 100%;
 }
+
+.one-tenth{
+width: 10%;
+}
+.two-tenths{
+width: 20%;
+}
+.three-tenths{
+width: 30%;
+}
+.four-tenth{
+width: 40%;
+}
+.five-tenths{
+width: 50%;
+}
+.six-tenths{
+width: 60%;
+}
+.seven-tenth{
+width: 70%;
+}
+.eight-tenths{
+width: 80%;
+}
+.nine-tenths{
+width: 90%;
+}
+.whole {
+  width:100%;
+}
+
 .caption{
 height: 100%;
 color: $caption_color;

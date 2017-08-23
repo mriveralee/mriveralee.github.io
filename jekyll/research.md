@@ -19,14 +19,12 @@ includedInNav: true
 <ul class="post-list">
 {% for item in site.research %}
     <li class="col three">
-      <div class="right one">
-        <img class="three" height="100%" src="{{site.assetsDir | append: item.url | append: item.teaserImageUrl }} ">
+      <div class="col left two">
+        <a class="research-title" href="{{ item.url }}">{{ item.title }}</a>
+        <p class="research-meta">{{item.shortDescription}}</p>
       </div>
-      <div class="left two">
-        <h2><a class="poem-title" href="{{ item.url }}">{{ item.title }}</a></h2>
-        <p class="post-meta">{{item.abstract}}</p>
-        <!-- <p class="post-meta">{{ item.publicationDate| date: '%B %-d, %Y — %H:%M' }}</p> -->
-        <p class="post-meta">{{ item.publicationDate| date: '%B %Y' }}</p>
+      <div class="col right one">
+        <img class="three" src="{{site.assetsDir | append: item.url | append: item.teaserImageUrl }} ">
       </div>
     </li>
 {% endfor %}
