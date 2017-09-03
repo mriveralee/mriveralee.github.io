@@ -2,7 +2,7 @@
 layout: page
 permalink: /research/
 title: research
-description: Showcase your writing, short stories, or poems. Replace this text with your description.
+description: My published work exploring novel fabrication techniques and computational design methods.
 includedInNav: true
 ---
 
