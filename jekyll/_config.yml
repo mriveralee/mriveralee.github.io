@@ -19,8 +19,14 @@ defaults:
     values:
       includedInNav: false
       layout: page
+  -
+    scope:
+      path: "/research"
+      values:
+        isLiveProjectPage: false
 
-assetsDir: /assets/
+
+assetsDir: /assets
 
 # Build settings
 markdown: kramdown

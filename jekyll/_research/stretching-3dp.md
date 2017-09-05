@@ -8,7 +8,7 @@ authors:
   - Jennifer Mankoff
   - Scott E. Hudson
 conferencePage: http://dl.acm.org/citation.cfm?id=3025460
-pdfUrl: http://www.mikeriv.com/publications/stretching-3dp/CHI17-stretching-3dp.pdf
+pdfUrl: CHI17-stretching-3dp.pdf
 videoUrl: https://www.youtube.com/watch?v=vMZIl4vDHfc
 publicationYear: 2017
 publicationDate: May 2017
@@ -21,7 +21,7 @@ abstract:
 
 citation: "Michael L. Rivera, Melissa Moukperian, Daniel Ashbrook, Jennifer Mankoff, and Scott E. Hudson. 2017. Stretching the Bounds of 3D Printing with Embedded Textiles. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (CHI '17). ACM, New York, NY, USA, 497-508. DOI: https://doi.org/10.1145/3025453.3025460"
 
-shortDescription: <span class="bold">Michael L. Rivera</span>, Melissa Moukperian, Daniel Ashbrook, Jennifer Mankoff, and Scott E. Hudson. CHI 2017.
+authorDescription: <span class="bold">Michael L. Rivera</span>, Melissa Moukperian, Daniel Ashbrook, Jennifer Mankoff, and Scott E. Hudson
 
 
 ---
