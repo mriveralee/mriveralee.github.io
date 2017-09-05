@@ -19,12 +19,7 @@ defaults:
     values:
       includedInNav: false
       layout: page
-  -
-    scope:
-      path: "/research"
-      values:
-        isLiveProjectPage: false
-
+      isLiveProjectPage: false
 
 assetsDir: /assets
 
