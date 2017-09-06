@@ -144,6 +144,7 @@ margin: 10px;
   > a {
     &:hover {
       text-decoration: none;
+      color: $grey-color-dark;
     }
   }
 }
@@ -157,6 +158,10 @@ margin: 10px;
   border-radius: 9px;
   font-size: 35px;
   color: white;
+  &:hover {
+    text-decoration: none;
+    background-color: $grey-color-dark;
+  }
 }
 
 .center{
