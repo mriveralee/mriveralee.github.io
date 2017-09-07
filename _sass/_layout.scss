@@ -75,9 +75,15 @@ display: line;
     h1{
         color: $theme-color;
         font-size:65px;
+        font-weight: $base-font-weight;
     }
-    h2{
+    h2 {
         font-size:20px;
+        line-height:3.0em;
+        @include media-query($on-palm) {
+          line-height: 1.6em;
+          padding-bottom: 30px;
+        }
     }
 }
 
@@ -85,16 +91,16 @@ display: line;
  * Site footer  **********************************************************
  */
 .site-footer {
-border-top: 1px solid $grey-color-dark;
-font-size: 10px;
-background-color: $grey-color-dark;
-padding: 2px;
-color: #aaa;
-position:fixed;
-left:0px;
-bottom:0px;
-height:25px;
-width:100%;
+  border-top: 1px solid $grey-color-dark;
+  font-size: 10px;
+  background-color: $grey-color-dark;
+  padding: 2px;
+  color: #aaa;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:25px;
+  width:100%;
 }
 /**
  * Pagination   **********************************************************

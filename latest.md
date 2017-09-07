@@ -8,7 +8,7 @@ includedInNav: true
 
 <div class="three" style="margin-bottom:40px;">
   <p>
-    I have my hands in a lot of pots- from research to music, all the way to woodworking. This is a place for all the things I do, write, read, or generally find interesting.
+    I have my hands in a lot of pots from research and music, all the way to wood-working. This is a place for all the things I do, write, read, or generally find interesting.
     More to see here soon!
   </p>
   <p>
