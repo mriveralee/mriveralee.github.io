@@ -1,7 +1,7 @@
 # Site settings
 title: Michael L. Rivera
 index_title: latest
-email: mike@mikeriv.com
+email: mlrivera@cs.cmu.edu
 description: > # this means to ignore newlines until "baseurl:"
   HCI Researcher in Fabrication and Computational Design
 baseurl:   # the subpath of your site, e.g. /blog/
