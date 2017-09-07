@@ -3,7 +3,7 @@ title: Michael L. Rivera
 index_title: latest
 email: mike@mikeriv.com
 description: > # this means to ignore newlines until "baseurl:"
-  HCI Researcher in Fabrication and Computational Design
+  Technical HCI Researcher
 baseurl:   # the subpath of your site, e.g. /blog/
 url:  http://www.mikeriv.com # the base hostname & protocol for your site
 twitter_username: mriveralee
@@ -16,7 +16,7 @@ defaults:
   -
     scope:
       path: "" # an empty string here means all files in the project
-    values:
+    values: 
       includedInNav: false
       layout: page
       isLiveProjectPage: false
