@@ -1,7 +1,8 @@
 ---
 layout: page
-title: latest
+title:
 ---
+
 <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
@@ -13,3 +14,18 @@ title: latest
       </li>
     {% endfor %}
 </ul>
+
+
+<div class="post-list">
+  <h2>Updates</h2>
+  <table class="microupdates">
+    {% assign updates = site.data.microupdates.updates | sort: 'date' %}
+    {% for update in updates reversed limit: 5 %}
+      <tr class="post-meta">
+        <td class="data"> {{ update.date | date: '%b %-d, %Y' }} </td>
+        <td> {{ update.text }} </td>
+    {% endfor %}
+  </table>
+</div>
+
+<hr class="hr-partial-sep">
