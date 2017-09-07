@@ -1,6 +1,6 @@
 ---
 layout: page
-title:
+title: latest
 ---
 
 <ul class="post-list">
@@ -17,7 +17,7 @@ title:
 
 
 <div class="post-list">
-  <h2>Updates</h2>
+  <h2>updates</h2>
   <table class="microupdates">
     {% assign updates = site.data.microupdates.updates | sort: 'date' %}
     {% for update in updates reversed limit: 5 %}
@@ -28,4 +28,4 @@ title:
   </table>
 </div>
 
-<hr class="hr-partial-sep">
+<hr class="hr-partial-sep" style="margin-bottom:10px;">
