@@ -1,7 +1,7 @@
 ---
 layout: default-less-padding
 title: about
-permalink: /about/
+permalink: /
 includedInNav: true
 ---
 {% include big-name-header.html %}

@@ -1,7 +1,8 @@
 ---
 layout: page
 title: latest
-isIndex: true
+permalink: /latest/
+includedInNav: true
 ---
 
 
