@@ -4,7 +4,7 @@ updates:
     text: New website launched; more goodies coming soon.
 
   - date: 2017-08-27 00:00
-    text: Officially starting the 3rd year of my PhD at the HCII.
+    text: Officially starting the 3rd year of my PhD at the <a href='https://www.hcii.cmu.edu/' target='_blank'>HCII</a>.
 
   - date: 2017-08-25 00:00
     text: Finished a fun summer with Tico Ballagas at <a href='http://www8.hp.com/us/en/hp-labs/research/overview.html#!immersive-experiences' target='_blank'>HP Labs</a>!
@@ -25,11 +25,12 @@ updates:
   - date: 2017-05-07 00:00
     text: Presented my work on <a href='http://dl.acm.org/citation.cfm?id=3025460' target='blank'>combining textiles and 3D printing</a> at CHI 2017.
 
+  - date: 2017-04-01 00:00
+    text: First guest lecture on 3D Printing for <a href="http://www.mayankgoel.courses/teaching/cmu-08-735/" target="_blank">Building User-Focussed Sensing Systems</a> @ CMU
+
   - date: 2017-03-23 00:00
     text: Awarded the Carnegie Mellon Sansom Presidential Fellowship!
 
-  - date: 2017-03-09 00:00
-    text: First guest lecture on 3D Printing for <a href="http://www.mayankgoel.courses/teaching/cmu-08-735/" target="_blank">Building User-Focussed Sensing Systems</a> @ CMU
 
   - date: 2017-01-15 00:00
     text: Awarded the Xerox Technical Minority Scholarship!

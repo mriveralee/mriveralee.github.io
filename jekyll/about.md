@@ -11,7 +11,8 @@ includedInNav: true
 <div class="post">
   <article class="post-content">
   <div class="col one right" style="padding: 20px; padding-top: 0px;">
-	 <img class="three right round-corners" src="{{site.baseurl}}/img/self/me_440x440.jpg">
+
+	 <img class="three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
   </div>
 
   I am a Ph.D. student at the <a href="http://www.hcii.cmu.edu/" target="_blank">Human-Computer Interaction Institute</a> of <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
