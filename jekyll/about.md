@@ -24,7 +24,7 @@ includedInNav: true
 	<br/>
   <br/>
   <br/>
-	<hr class="hr-partial-sep" />
+	<hr class="hr-partial-sep"/>
 	<span class="contacticon center">
 		<a class="fa-icon-highlight" href="mailto:{{site.email}}" title="Email">
       <i class="vert-middle fa fa-envelope-square"></i>

@@ -1,13 +1,26 @@
 
 updates:
-  - date: 2017-09-06 00:00:00
-    text: New website launched. More goodies coming soon.
+  - date: 2017-09-08 00:00
+    text: New website launched; more goodies coming soon.
 
-  - date: 2017-08-27 00:00:00
+  - date: 2017-08-27 00:00
     text: Officially starting the 3rd year of my PhD at the HCII.
 
-  - date: 2017-08-25 00:00:00
-    text: "Finished a fun summer at <a href='http://www8.hp.com/us/en/hp-labs/research/overview.html#!immersive-experiences' target='_blank'>HP Labs</a>!"
+  - date: 2017-08-25 00:00
+    text: Finished a fun summer with Tico Ballagas at <a href='http://www8.hp.com/us/en/hp-labs/research/overview.html#!immersive-experiences' target='_blank'>HP Labs</a>!
 
-  - date: 2017-05-07 00:00:00
+  - date: 2017-07-03 00:00
+    text: 3D Printing with Embedded Textiles featured on <a href='http://www.3ders.org/articles/20170703-carnegie-mellon-research-project-combines-3d-printing-with-embedded-textiles.html' target='_blank'>3Ders</a>,
+      <a href='https://3dprintingindustry.com/news/research-embeds-textiles-3d-printing-functional-flexible-parts-117459/' target='_blank'>3D Printing Industry</a>, and <a href='https://3dprinting.com/news/researchers-3d-print-flexible-textiles-for-development-of-functional-objects/' target='_blank'>3DPrinting.com</a>.
+
+  - date: 2017-06-01 00:00
+    text: Joining the Immersive Experiences Lab at HP for the summer!
+    
+  - date: 2017-05-26 00:00
+    text: My brother got <a href='http://www.beeboopboop.com/AlexAndMichelle/' target='_blank'>married</a>!
+
+  - date: 2017-05-11 00:00
+    text: <a href='https://spectrum.ieee.org/tech-talk/computing/hardware/mechanical-metamaterials-and-other-3d-printing-tech-from-chi-2017' target='_blank'>IEEE Spectrum </a> features 3D Printing with Embedded Textiles
+
+  - date: 2017-05-07 00:00
     text: Presented my work on <a href='http://dl.acm.org/citation.cfm?id=3025460' target='blank'>combining textiles and 3D printing</a> at CHI 2017.

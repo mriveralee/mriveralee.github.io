@@ -16,15 +16,18 @@ title: latest
 </ul>
 
 
-<div class="post-list">
+<div class="microupdates">
   <h2>updates</h2>
-  <table class="microupdates">
-    {% assign updates = site.data.microupdates.updates | sort: 'date' %}
-    {% for update in updates reversed limit: 5 %}
-      <tr class="post-meta">
-        <td class="data"> {{ update.date | date: '%b %-d, %Y' }} </td>
-        <td> {{ update.text }} </td>
-    {% endfor %}
+  <table>
+    <tbody>
+      {% assign updates = site.data.microupdates.updates | sort: 'date' %}
+      {% for update in updates reversed limit: 20 %}
+        <tr class="post-meta ">
+          <td class="data-spacer date"> {{ update.date | date: '%b %-d, %Y' }} </td>
+          <td> {{ update.text }} </td>
+        </tr>
+      {% endfor %}
+    </tbody>
   </table>
 </div>
 
