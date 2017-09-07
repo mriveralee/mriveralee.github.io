@@ -5,7 +5,7 @@ email: mike@mikeriv.com
 description: > # this means to ignore newlines until "baseurl:"
   HCI Researcher in Fabrication and Computational Design
 baseurl:   # the subpath of your site, e.g. /blog/
-url:  http://wwww.mikeriv.com # the base hostname & protocol for your site
+url:  http://www.mikeriv.com # the base hostname & protocol for your site
 twitter_username: mriveralee
 github_username:  mriveralee
 linkedin_username: mikeriv
@@ -67,3 +67,4 @@ exclude:
   - README.md
   - CNAME
   - examples
+  - old_site
