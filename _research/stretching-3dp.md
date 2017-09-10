@@ -15,7 +15,7 @@ publicationYear: 2017
 publicationDate: May 2017
 conferenceShortName: CHI 2017
 conferenceName: ACM SIGCHI
-teaserImageUrl: /img/teaser_watch_band_01.jpg
+teaserImageUrl: img/teaser_watch_band_01.jpg
 images:
 abstract: >
   Textiles are an old and well developed technology that have many desirable characteristics. They can be easily folded, twisted, deformed, or cut; some can be stretched; many are soft. Textiles can maintain their shape when placed under tension and can even be engineered with variable stretching ability. Conversely, 3D printing is a relatively new technology that can precisely produce functional, rigid objects with custom geometry. Combining 3D printing and textiles opens up new opportunities for rapidly creating rigid objects with embedded flexibility as well as soft materials imbued with additional functionality. In this paper, we introduce a suite of techniques for integrating 3D printing with textiles during the printing process, opening up a new design space that takes inspiration from both fields. We demonstrate how the malleability, stretchability and aesthetic qualities of textiles can enhance rigid printed objects, and how textiles can be augmented with functional properties enabled by 3D printing.
@@ -49,69 +49,38 @@ isLiveProjectPage: true
 
 <h3 style="margin-bottom:10px;"> media and images </h3>
 <div class="media_container">
-  <div class="img_row">
-    <div class="col half">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/watch_band_01.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/watch_band_01.jpg'}}" />
-      </a>
-    </div>
-    <div class="col half">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/watch_band_02.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/watch_band_02.jpg'}}" />
-      </a>
-    </div>
-  </div>
+  {% include img/img_row_two.html
+    pageUrl=page.url
+    img1="watch_band_01.jpg"
+    img2="watch_band_02.jpg"  %}
 
-  <div class="img_row">
-    <div class="col half">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_01.jpg'}}" />
-      </a>
-    </div>
-    <div class="col half">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_02.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_02.jpg'}}" />
-      </a>
-    </div>
-  </div>
+    {% include img/img_row_one.html
+      pageUrl=page.url
+      img1="box_lid_03.jpg"  %}
+  {% include img/img_row_two.html
+    pageUrl=page.url
+    img1="box_lid_01.jpg"
+    img2="box_lid_02.jpg"  %}
 
-  <div class="img_row">
-    <div class="col one">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/adhesion.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/adhesion.jpg'}}" />
-      </a>
-    </div>
-    <div class="col one">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/cat_toy_01.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/cat_toy_01.jpg'}}" />
-      </a>
-    </div>
-    <div class="col one">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/mech_arm_01.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/mech_arm_01.jpg'}}" />
-      </a>
-    </div>
-  </div>
+  {% include img/img_row_two.html
+    pageUrl=page.url
+    img1="dodeca_flat.jpg"
+    img2="dodeca_open.jpg"  %}
 
-  <div class="img_row">
-    <div class="col three">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_01.jpg'}}" />
-      </a>
-    </div>
-  </div>
+  {% include img/img_row_three.html
+    pageUrl=page.url
+    img1="adhesion.jpg"
+    img2="cat_toy_01.jpg"
+    img3="hexagon_01.jpg"  %}
 
-  <div class="img_row">
-    <div class="col half">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_flat.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_flat.jpg'}}" />
-      </a>
-    </div>
-    <div class="col half">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_open.jpg'}}" target="_blank">
-        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_open.jpg'}}" />
-      </a>
-    </div>
+
+  {% include img/img_row_two.html
+    pageUrl=page.url
+    img1="mech_arm_01.jpg"
+    img2="mech_arm_02.jpg" %}
+
+
+
 
 <!-- end media container -->
 </div>
