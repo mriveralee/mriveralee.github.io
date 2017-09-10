@@ -32,9 +32,11 @@ isLiveProjectPage: true
 </div>
 
 {% if page.youtubeVideoId %}
-<div class="yt-video-container">
-  <iframe width="100%" height="auto" src="{{ page.youtubeVideoId | prepend: 'https://www.youtube.com/embed/'}}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-</div>
+<p>
+  <div class="yt-video-container">
+    <iframe width="100%" height="auto" src="{{ page.youtubeVideoId | prepend: 'https://www.youtube.com/embed/'}}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+</p>
 {% endif %}
 
 <p>
@@ -90,10 +92,19 @@ isLiveProjectPage: true
       </a>
     </div>
   </div>
+
   <div class="img_row">
-    <div >
+    <div class="col three">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_01.jpg'}}" />
+      </a>
+    </div>
+  </div>
+
+  <div class="img_row">
+    <div class="col half">
       <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_flat.jpg'}}" target="_blank">
-        <img class="col half" width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_flat.jpg'}}" />
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_flat.jpg'}}" />
       </a>
     </div>
     <div class="col half">
@@ -101,5 +112,6 @@ isLiveProjectPage: true
         <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_open.jpg'}}" />
       </a>
     </div>
-  </div>
+
+<!-- end media container -->
 </div>
