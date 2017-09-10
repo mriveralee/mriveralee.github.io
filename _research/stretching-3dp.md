@@ -26,17 +26,10 @@ authorDescription: <span class="bold">Michael L. Rivera</span>, Melissa Moukperi
 isLiveProjectPage: true
 ---
 
-<div>
-  <h3 style="margin-bottom:10px;">abstract</h3>
-  <p>{{ page.abstract }}</p>
-</div>
+{% include research/abstract.html abstract=page.abstract %}
 
 {% if page.youtubeVideoId %}
-<p>
-  <div class="yt-video-container">
-    <iframe width="100%" height="auto" src="{{ page.youtubeVideoId | prepend: 'https://www.youtube.com/embed/'}}" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-  </div>
-</p>
+  {% include media/youtube.html youtubeVideoId=page.youtubeVideoId %}
 {% endif %}
 
 <p>
@@ -54,9 +47,10 @@ isLiveProjectPage: true
     img1="watch_band_01.jpg"
     img2="watch_band_02.jpg"  %}
 
-    {% include img/img_row_one.html
-      pageUrl=page.url
-      img1="box_lid_03.jpg"  %}
+  {% include img/img_row_one.html
+    pageUrl=page.url
+    img1="box_lid_03.jpg"  %}
+
   {% include img/img_row_two.html
     pageUrl=page.url
     img1="box_lid_01.jpg"
@@ -73,14 +67,10 @@ isLiveProjectPage: true
     img2="cat_toy_01.jpg"
     img3="hexagon_01.jpg"  %}
 
-
   {% include img/img_row_two.html
     pageUrl=page.url
     img1="mech_arm_01.jpg"
     img2="mech_arm_02.jpg" %}
-
-
-
 
 <!-- end media container -->
 </div>
