@@ -95,7 +95,7 @@ isLiveProjectPage: true
 
   <div class="img_row">
     <div class="col three">
-      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01'}}" target="_blank">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01.jpg'}}" target="_blank">
         <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_01.jpg'}}" />
       </a>
     </div>
