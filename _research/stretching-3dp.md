@@ -26,10 +26,10 @@ authorDescription: <span class="bold">Michael L. Rivera</span>, Melissa Moukperi
 isLiveProjectPage: true
 ---
 
-<p>
-  <h3>abstract</h3>
-  {{ page.abstract }}
-</p>
+<div>
+  <h3 style="margin-bottom:10px;">abstract</h3>
+  <p>{{ page.abstract }}</p>
+</div>
 
 {% if page.youtubeVideoId %}
 <div class="yt-video-container">
@@ -38,72 +38,68 @@ isLiveProjectPage: true
 {% endif %}
 
 <p>
-  <h3>citation</h3>
+  <h3 style="margin-bottom:10px;">citation</h3>
   <div class="research-meta">
       <pre class="citation">{{ page.citation }}</pre>
   </div>
 </p>
 
-<h3> media and images </h3>
-<div class="img_row">
-  <div class="col half">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/watch_band_01.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/watch_band_01.jpg'}}" />
-    </a>
-  </div>
-  <div class="col half">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/watch_band_02.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/watch_band_02.jpg'}}" />
-    </a>
-  </div>
-</div>
 
-<div class="img_row">
-  <div class="col half">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_01.jpg'}}" />
-    </a>
+<h3 style="margin-bottom:10px;"> media and images </h3>
+<div class="media_container">
+  <div class="img_row">
+    <div class="col half">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/watch_band_01.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/watch_band_01.jpg'}}" />
+      </a>
+    </div>
+    <div class="col half">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/watch_band_02.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/watch_band_02.jpg'}}" />
+      </a>
+    </div>
   </div>
-  <div class="col half">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_02.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_02.jpg'}}" />
-    </a>
-  </div>
-</div>
 
-<div class="img_row">
-  <div >
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_flat.jpg'}}" target="_blank">
-      <img class="col half" width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_flat.jpg'}}" />
-    </a>
+  <div class="img_row">
+    <div class="col half">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_01.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_01.jpg'}}" />
+      </a>
+    </div>
+    <div class="col half">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/box_lid_02.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/box_lid_02.jpg'}}" />
+      </a>
+    </div>
   </div>
-  <div class="col half">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_open.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_open.jpg'}}" />
-    </a>
-  </div>
-</div>
 
-<div class="img_row">
-  <img class="col one" src="{{site.assetsDir | append: page.url | append: '/img/low-res/adhesion.jpg'}}" />
-  <img class="col one" src="{{site.assetsDir | append: page.url | append: '/img/low-res/adhesion.jpg'}}" />
-  <img class="col one" src="{{site.assetsDir | append: page.url | append: '/img/low-res/adhesion.jpg'}}" />
-</div>
-
-<div class="img_row">
-  <div class="col one">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/adhesion.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/adhesion.jpg'}}" />
-    </a>
+  <div class="img_row">
+    <div class="col one">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/adhesion.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/adhesion.jpg'}}" />
+      </a>
+    </div>
+    <div class="col one">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/cat_toy_01.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/cat_toy_01.jpg'}}" />
+      </a>
+    </div>
+    <div class="col one">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/mech_arm_01.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/mech_arm_01.jpg'}}" />
+      </a>
+    </div>
   </div>
-  <div class="col one">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/cat_toy_01.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/cat_toy_01.jpg'}}" />
-    </a>
-  </div>
-  <div class="col one">
-    <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/mech_arm_01.jpg'}}" target="_blank">
-      <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/mech_arm_01.jpg'}}" />
-    </a>
+  <div class="img_row">
+    <div >
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_flat.jpg'}}" target="_blank">
+        <img class="col half" width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_flat.jpg'}}" />
+      </a>
+    </div>
+    <div class="col half">
+      <a href="{{site.assetsDir | append: page.url | append: '/img/high-res/dodeca_open.jpg'}}" target="_blank">
+        <img width="100%" src="{{site.assetsDir | append: page.url | append: '/img/low-res/dodeca_open.jpg'}}" />
+      </a>
+    </div>
   </div>
 </div>
