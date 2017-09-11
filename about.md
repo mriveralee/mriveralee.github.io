@@ -12,8 +12,8 @@ includedInNav: true
     	 <img class="three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
       </div>
       I am a Ph.D. student at the <a href="http://www.hcii.cmu.edu/" target="_blank">Human-Computer Interaction Institute</a> of <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
-      My research explores novel fabrication techniques and computational design methods to create new opportunities for sensing and interactivity. I am advised <a href="http://www.cs.cmu.edu/~hudson/" target="_blank">Scott Hudson</a> at the <a href="https://github.com/cmu-devlab/" target="_blank">Dev Lab</a>  
-    	<br/>
+      My research explores novel fabrication techniques and computational design methods to create new opportunities for sensing and interactivity. I am advised by <a href="http://www.cs.cmu.edu/~hudson/" target="_blank">Scott Hudson</a> at the <a href="https://github.com/cmu-devlab/" target="_blank">Dev Lab</a>   
+   	<br/>
       <br/>
       Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> and <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">curriculum vitae </a> to learn more about my work.
     	<br/>
