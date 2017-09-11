@@ -9,6 +9,9 @@ quotes:
   - author: Drake, Over My Dead Body
     quote: Feeling good, living better.
 
+  - author: Lionel Richie, Hello
+    quote: "Hello, is it me you're looking for?"
+
   - author: Isak Dinesen
     quote: "The cure for anything is salt water: sweat, tears, or the sea."
 
@@ -17,6 +20,12 @@ quotes:
 
   - author: F. Scott Fitzgerald, The Great Gatsby
     quote: So we beat on, boats against the current, borne back ceaselessly into the past.
+
   - author: William Bruce Cameron
-    quote: Not everything that counts can be counted, and not everything that can be counted counts
+    quote: Not everything that counts can be counted, and not everything that can be counted counts.
+
+  - author: Yoda
+    quote: Do. Or do not. There is no try.
+
+
 ---
