@@ -416,6 +416,9 @@ background: $theme-color;
   display: inline-block;
   box-sizing:border-box;
   line-height: 0em;
+  a {
+    //display: inline-block;
+  }
 }
 
 .img_row_fixed {
