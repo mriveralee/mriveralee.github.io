@@ -1,0 +1,22 @@
+<div class="citation-wrapper">
+  <h3 class="mb-10">citation</h3>
+    <pre class="citation">{{ include.citation }}</pre>
+    {% assign hasPrevLink = false %}
+    <div class="citation-meta">
+      <span class="three">
+        {% if include.pdfUrl %}
+          <a class="" target="_blank" href="{{site.assetsDir | append: include.pageUrl | append: include.pdfUrl }}">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Paper</a>
+          {% assign hasPrevLink = true %}
+        {% endif %}
+        {% if include.doiUrl %}
+            {% if hasPrevLink %}
+              <span class="research-meta-separator">{{ site.linkSeparator }}</span>
+            {% endif %}
+            <a class="" target="_blank" href="{{ include.doiUrl }}">
+              <i class="fa fa-external-link" aria-hidden="true"></i> DOI </a>
+        {% assign hasPrevLink = true %}
+        {% endif %}
+      </span>
+    </div>
+</div>

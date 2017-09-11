@@ -10,6 +10,7 @@ github_username:  mriveralee
 linkedin_username: mikeriv
 path_to_cv: /assets/downloads/RIVERA_MICHAEL_CV.pdf
 path_to_research: /research/
+linkSeparator: "-"
 keywords: technical hci research, human-computer interaction, michael l. rivera, mriveralee, mike rivera, hcii, phd
 defaults:
   -

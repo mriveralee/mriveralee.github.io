@@ -4,7 +4,6 @@ permalink: /research/
 title: research
 description: My published work exploring novel fabrication techniques and computational design methods. 
 includedInNav: true
-linkSeparator: "-"
 ---
 
 <!-- <ul class="post-list">
@@ -33,7 +32,7 @@ linkSeparator: "-"
           <span>
           {% assign hasPrevLink = false %}
           {% if hasPrevLink %}
-           <span class="research-meta-separator">{{ page.linkSeparator }}</span>
+           <span class="research-meta-separator">{{ site.linkSeparator }}</span>
           {% endif %}
             {% if item.pdfUrl %}
               <a class="research-meta-link" target="_blank" href="{{site.assetsDir | append: item.url | append: item.pdfUrl }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a>
@@ -42,7 +41,7 @@ linkSeparator: "-"
 
             {% if item.videoUrl %}
               {% if hasPrevLink %}
-               <span class="research-meta-separator">{{ page.linkSeparator }}</span>
+               <span class="research-meta-separator">{{ site.linkSeparator }}</span>
               {% endif %}
                 <a class="research-meta-link" target="_blank" href="{{ item.videoUrl }}"><i class="fa fa-film" aria-hidden="true"></i> Video</a>
               {% assign hasPrevLink = true %}

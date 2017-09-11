@@ -12,7 +12,7 @@ authors:
   - Hammad Khan
   - Mohamed A. Rehman
   - John E. Fiadjoe
-conferencePaperUrl: http://online.liebertpub.com/doi/abs/10.1089/3dp.2016.0025
+doiUrl: http://online.liebertpub.com/doi/abs/10.1089/3dp.2016.0025
 pdfUrl: tracheal-aire-2016.pdf
 publicationYear: 2016
 publicationDate: September 2016
@@ -26,8 +26,36 @@ abstract:
 citation: "Jorge A. Gálvez, Allan F. Simpao, Yoav Dori, Kevin Gralewski, Nicholas H. McGill, Michael L. Rivera,  Nile Delso, Hammad Khan, Mohamed A. Rehman, and John E. Fiadjoe. 3D Printing and Additive Manufacturing. September 2016, 3(3): 160-165. https://doi.org/10.1089/3dp.2016.0025"
 
 authorDescription: Jorge A. Gálvez, Allan F. Simpao, Yoav Dori, Kevin Gralewski, Nicholas H. McGill, <span class="bold">Michael L. Rivera</span>, Nile Delso, Hammad Khan, Mohamed A. Rehman, and John E. Fiadjoe
+isLiveProjectPage: true
 ---
 
-{{ page.title }}
+{% include research/abstract.html abstract=page.abstract %}
 
-<p>{{ page.abstract }}</p>
+{% if page.youtubeVideoId %}
+  <!--hr class="hr-section-sep" /-->
+  {% include media/youtube.html youtubeVideoId=page.youtubeVideoId %}
+{% endif %}
+
+<hr class="hr-section-sep" />
+
+{% include research/citation.html
+  pageUrl=page.url
+  citation=page.citation
+  pdfUrl=page.pdfUrl
+  doiUrl=page.doiUrl %}
+
+<hr class="hr-section-sep" />
+
+<div class="media-container">
+  <h3 class="mb-10"> media and images </h3>
+  <div class="media_container">
+    {% include img/img_row_two.html
+      pageUrl=page.url
+      img1="airway_01.jpg"
+      img2="airway_02.jpg"  %}
+
+    {% include img/img_row_one.html
+      pageUrl=page.url
+      img1="man_01.jpg"  %}
+  </div><!-- end media container -->
+</div>
