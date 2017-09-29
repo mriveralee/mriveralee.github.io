@@ -50,7 +50,9 @@ includedInNav: true
       </p>
       </div>
       <div class="col right one">
-        <img class="three" src="{{site.assetsDir | append: item.url | append: item.teaserImageUrl }} ">
+        <a href="{{projectLink}}">
+          <img class="three" src="{{site.assetsDir | append: item.url | append: item.teaserImageUrl }} ">
+        </a>
       </div>
       <div class="col clearfix three" style="margin-bottom: 5px; margin-top:10px;">
         <hr style="width:60%; margin: 0px auto;"/>
