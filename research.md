@@ -1,64 +1,42 @@
 ---
-layout: page
-permalink: /research/
+layout: default-less-padding
 title: research
-description: My published work exploring novel fabrication techniques and computational design methods. 
+permalink: /
 includedInNav: true
 ---
+{% include big-name-header.html %}
 
-<!-- <ul class="post-list">
-{% for poem in site.poetry reversed %}
-    <li>
-        <h2><a class="poem-title" href="{{ poem.url | prepend: site.baseurl }}">{{ poem.title }}</a></h2>
-        <p class="post-meta">{{ poem.date | date: '%B %-d, %Y — %H:%M' }}</p>
-      </li>
-{% endfor %}
-</ul> -->
+<div class="post" style="margin-top: 44px;">
+  <article class="post-content">
+    <div class="col one right" style="padding: 0px 40px 20px 40px;">
+	   <img class="three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
+    </div>
+    I am a Ph.D. student at the <a href="http://www.hcii.cmu.edu/" target="_blank">Human-Computer Interaction Institute</a> of <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. My research explores novel fabrication techniques and computational design methods to create new opportunities for sensing and interactivity. I am advised by <a href="http://www.cs.cmu.edu/~hudson/" target="_blank">Scott Hudson</a> at the <a href="https://github.com/cmu-devlab/" target="_blank">Dev Lab</a>  
+   	<br/>
+    <br/>
+    Check out my <a href="{{site.path_to_research}}" title="Research">research projects </a> and <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">curriculum vitae</a> to learn more about my work.
+  	<br style="clear:both;"/>
+  	<!-- <hr class="hr-partial-sep"/> -->
+    <span class="contacticon center">
+      <a class="fa-icon-highlight" href="mailto:{{site.email}}" title="Email">
+        <i class="vert-middle fa fa-envelope-square"></i>
+      </a>
+      <a class="fa-icon-highlight" href="https://github.com/{{site.github_username}}" target="_blank" title="Github">
+        <i class="vert-middle fa fa-github-square"></i>
+      </a>
+      <a class="fa-icon-highlight" href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">
+        <i id="cv-icon" class="vert-middle fa fa-file-text-o"></i>
+      </a>
+      <a class="fa-icon-highlight" href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" title="LinkedIn">
+        <i class="vert-middle fa fa-linkedin-square"></i>
+      </a>
+      <a class="fa-icon-highlight" href="https://twitter.com/{{site.twitter_username}}" target="_blank" title="Twitter">
+        <i class="vert-middle fa fa-twitter-square"></i>
+      </a>
+    </span>
+  </article>
+</div>
 
+<hr class="hr-partial-sep" style="margin-top:20px; margin-bottom:20px;" />
 
-<ul class="post-list">
-{% for item in site.research %}
-
-    <li class="col three" style="padding-left: 0px; margin-bottom:0px;">
-      <div class="col left two" style="padding-left: 0px;">
-      {% if item.isLiveProjectPage %}
-        {% assign projectLink = item.url  %}
-      {% else %}
-        {% assign projectLink = site.assetsDir | append: item.url | append: item.pdfUrl %}
-      {% endif %}
-        <a class="research-title" href="{{ projectLink }}">{{ item.title }}</a>
-        <p class="research-meta">{{item.authorDescription}}. <span style="font-style:italic;">{{item.conferenceShortName}}</span>.</p>
-        <p class="research-meta">
-          <span>
-          {% assign hasPrevLink = false %}
-          {% if hasPrevLink %}
-           <span class="research-meta-separator">{{ site.linkSeparator }}</span>
-          {% endif %}
-            {% if item.pdfUrl %}
-              <a class="research-meta-link" target="_blank" href="{{site.assetsDir | append: item.url | append: item.pdfUrl }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a>
-              {% assign hasPrevLink = true %}
-            {% endif %}
-
-            {% if item.videoUrl %}
-              {% if hasPrevLink %}
-               <span class="research-meta-separator">{{ site.linkSeparator }}</span>
-              {% endif %}
-                <a class="research-meta-link" target="_blank" href="{{ item.videoUrl }}"><i class="fa fa-film" aria-hidden="true"></i> Video</a>
-              {% assign hasPrevLink = true %}
-            {% endif %}
-          </span>
-      </p>
-      </div>
-      <div class="col right one">
-        <a href="{{projectLink}}">
-          <img class="three" src="{{site.assetsDir | append: item.url | append: item.teaserImageUrl }} ">
-        </a>
-      </div>
-      <div class="col clearfix three" style="margin-bottom: 5px; margin-top:10px;">
-        <hr style="width:60%; margin: 0px auto;"/>
-      </div>
-
-    </li>
-
-{% endfor %}
-</ul>
+{% include research/research-section.html abstract=page.abstract %}

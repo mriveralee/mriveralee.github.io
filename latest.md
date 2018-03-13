@@ -2,7 +2,7 @@
 layout: page
 title: latest
 permalink: /latest/
-includedInNav: true
+includedInNav: false
 ---
 
 

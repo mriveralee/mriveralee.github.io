@@ -19,6 +19,8 @@
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+        <!-- Add Latest -->
+          <a class="page-link" href="{{ site.baseurl | append: '/latest/'}}">latest</a>
         <!-- Add Music -->
           <a class="page-link" href="{{ site.baseurl | append: '/music/'}}">music</a>
         <!-- Add CV -->
