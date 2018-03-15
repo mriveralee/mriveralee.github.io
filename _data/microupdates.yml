@@ -1,7 +1,19 @@
 
 updates:
+  - date: 2018-03-16 00:00
+    text: Spent Spring Break in Florida with my brother.
+
+  - date: 2018-03-12 00:00
+    text: Work-In-Progress submitted to <a href='http://dis2018.org/' target='_blank'>DIS 2018</a> !
+
+  - date: 2018-03-04 00:00
+    text: Did some <a href='/assets/updates/img/20180304-glass-blowing.jpg' target='_blank'>Glass Blowing</a> at <a href='https://www.pittsburghglasscenter.org/'>Pittsburgh Glass Center</a>
+
+  - date: 2018-03-10 00:00
+    text: Celebrated my Dad's 50th birthday in Philly!
+
   - date: 2017-10-25 00:00
-    text: Had a great time in Quebec City at UIST 2017!
+    text: Had a great time in Quebec City at <a href='https://uist.acm.org/uist2017/' target='_blank'>UIST 2017</a>!
 
   - date: 2017-09-22 00:00
     text: Finished with PhD <a href='http://www.beeboopboop.com/qualifyingExam/' target='_blank'>qualifying exams</a>!
