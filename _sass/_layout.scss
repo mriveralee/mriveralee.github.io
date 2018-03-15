@@ -134,8 +134,9 @@ padding: 60px 0 0 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ // was 100px
 }
 
 .page-heading {
-font-size: 20px;
+  font-size: 20px;
 }
+
 .post-list {
 margin: 0px 0;
 list-style: none;
@@ -143,6 +144,7 @@ list-style: none;
       margin-bottom: $vertical-spacing-unit;
     }
 }
+
 .round-corners {
   border-radius: 2px;
 }
@@ -204,6 +206,7 @@ margin-bottom: $vertical-spacing-unit;
   line-height: 1.2;
 }
 
+
 .post-title, .project-title {
   letter-spacing: -1px;
   @include media-query($on-laptop) {
@@ -213,6 +216,7 @@ margin-bottom: $vertical-spacing-unit;
 
 
 .post-content {
+  display: inline-block;
 h2 {
 font-size: 42px;
 @include media-query($on-laptop) {
@@ -250,6 +254,21 @@ line-height: 1;
 @include media-query($on-laptop) {
 font-size: 16px;
     }
+}
+
+/** Music Formatting *****************************************/
+.music-project-title {
+  font-size: 16px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 10px;
+  @include media-query($on-laptop) {
+    font-size: 16px;
+    }
+}
+
+.soundcloud-player-wrapper {
+  display: block;
 }
 
 /** Research Formatting *****************************************/

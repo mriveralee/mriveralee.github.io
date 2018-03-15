@@ -12,7 +12,7 @@ includedInNav: false
     More to see here soon!
   </p>
   <p>
-    In the mean time, check out my <a href ="/research/">research</a> and <a href ="/music/">music</a>.
+    In the mean time, check out my <a href ="{{site.path_to_research}}">research</a> and <a href ="/music/">music</a>.
   </p>
 </div>
 

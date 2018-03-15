@@ -1,21 +1,35 @@
-<div class="center">
-  <div id="soundcloud-loader" class="loading-spinner"
-    style="
-      position:absolute;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top:125px;">
-  </div>
-  <iframe
-    id="soundcloud-window" 
-    style="display:hidden; margin-bottom:20px;"
-    width="100%"
-    height="425"
-    scrolling="no"
-    frameborder="no"
-    onload="(function() {document.getElementById('soundcloud-loader').style.display = 'none'; document.getElementById('soundcloud-window').style.display = 'inline-block';}())"
-    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/116412274&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
-  </iframe>
+<div class="post">
+  <header class="post-header">
+    <h3 class="post-title mb-10">recorded tracks</h3>
+    <p class="post-description">
+      A professor of fine arts once told me that my style of drawing was "very tired and worked".
+       I think my music has those qualities too. Like drawing, I started learning how to play
+       and sing in college without much formal training. The music I make sounds rough, but
+       one could argue that gives it some character.
+     </p>
+   </header>
+
+  <article class="post-content soundcloud-player-wrapper">
+    <div class="center">
+      <div id="soundcloud-loader" class="loading-spinner"
+        style="
+          position:absolute;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top:125px;">
+      </div>
+      <iframe
+        id="soundcloud-window"
+        style="display:hidden; margin-bottom:20px;"
+        width="100%"
+        height="425"
+        scrolling="no"
+        frameborder="no"
+        onload="(function() {document.getElementById('soundcloud-loader').style.display = 'none'; document.getElementById('soundcloud-window').style.display = 'inline-block';}())"
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/116412274&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
+      </iframe>
+    </div>
+  </article>
 </div>
