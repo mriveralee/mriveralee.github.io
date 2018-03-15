@@ -1,7 +1,8 @@
 ---
 layout: page
-# title: music
+title: music
 permalink: /music/
+hideHeader: true
 ---
 
 {% include music/music-projects.html %}
