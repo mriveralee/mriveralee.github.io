@@ -3,6 +3,7 @@ layout: default-less-padding
 title: research
 permalink: /
 includedInNav: true
+
 ---
 {% include big-name-header.html %}
 
