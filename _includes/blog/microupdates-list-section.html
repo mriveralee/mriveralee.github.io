@@ -1,7 +1,7 @@
+{% if include.useTitle %}
+<h3 style="margin-bottom: 30px;">updates</h3>
+{% endif %}
 <div class="microupdates">
-  {% if include.useTitle %}
-  <h3 style="margin-bottom: 30px;">updates</h3>
-  {% endif %}
   <table style="margin-bottom: 0.2em;">
     <tbody>
       {% assign updates = site.data.microupdates.updates | sort: 'date' | reverse %}
