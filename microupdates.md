@@ -10,4 +10,4 @@ hideHeader: true
 
 {% include blog/microupdates-list-section.html limit=100000 hideSeeMoreLink=true %}
 
-<hr class="hr-partial-sep" style="margin-top:10px; margin-bottom:10px;" />
+<hr class="hr-partial-sep" style="margin-top:30px; margin-bottom:10px;" />

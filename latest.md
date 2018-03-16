@@ -18,4 +18,6 @@ includedInNav: false
 
 {% include blog/microupdates-list-section.html limit=10 useTitle=true showSeeMoreLink=true %}
 
+{% include blog/likeness-comic.html %}
+
 <hr class="hr-partial-sep" style="margin-bottom:10px;" />
