@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
 title: updates
 permalink: /updates/
 includedInNav: false
-
+hideHeader: true
 ---
 <h1 class="project-title" style="margin-bottom: 30px;">{{ page.title }}</h1>
 
