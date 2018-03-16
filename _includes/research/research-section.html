@@ -7,8 +7,8 @@
 
   <article class="post-content">
     <ul class="post-list">
-    {% for item in site.research %}
-
+      {% assign researchProjects = site.research | sort: 'date' %}
+      {% for item in researchProjects %}
         <li class="col three" style="padding-left: 0px; margin-bottom:0px;">
           <div class="col left two" style="padding-left: 0px;">
           {% if item.isLiveProjectPage %}
