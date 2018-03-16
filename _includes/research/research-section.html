@@ -9,7 +9,7 @@
     <ul class="post-list">
       {% assign researchProjects = site.research | sort: 'date' %}
       {% for item in researchProjects %}
-        <li class="col three" style="padding-left: 0px; margin-bottom:0px;">
+        <li class="col three" style="padding-left: 0px; padding-right: 0px; margin-bottom:0px;">
           <div class="col left two" style="padding-left: 0px;">
           {% if item.isLiveProjectPage %}
             {% assign projectLink = item.url  %}
@@ -39,7 +39,7 @@
               </span>
           </p>
           </div>
-          <div class="col right one">
+          <div class="col right one" style="padding-right: 0px;">
             <a href="{{projectLink}}">
               <img class="three" src="{{site.assetsDir | append: item.url | append: item.teaserImageUrl }} ">
             </a>
