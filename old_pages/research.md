@@ -21,7 +21,7 @@ includedInNav: true
 
     <li class="col three" style="padding-left: 0px; margin-bottom:0px;">
       <div class="col left two" style="padding-left: 0px;">
-      {% if item.isLiveProjectPage %}
+      {% if item.published %}
         {% assign projectLink = item.url  %}
       {% else %}
         {% assign projectLink = site.assetsDir | append: item.url | append: item.pdfUrl %}

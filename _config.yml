@@ -13,7 +13,7 @@ path_to_research: '/#research-section' #/research/
 path_to_music: '/music/'
 path_to_updates: '/updates/'
 linkSeparator: "-"
-keywords: technical hci research, human-computer interaction, michael l. rivera, mriveralee, mike rivera, hcii, phd
+keywords: technical hci research, human-computer interaction, michael l. rivera, mriveralee, mike rivera, hcii, phd, fabrication, 3d printing, interactivity
 defaults:
   -
     scope:
@@ -21,9 +21,11 @@ defaults:
     values:
       includedInNav: false
       layout: page
-      isLiveProjectPage: false
-
+      published: true
 assetsDir: /assets
+
+# Show Future dated posts by default
+future: true
 
 # Build settings
 markdown: kramdown
@@ -47,6 +49,7 @@ collections:
     permalink: /portfolio/:path/
   research:
     output: true
+    future: true
     permalink: /research/:path/
   poetry:
     output: true

@@ -8,7 +8,7 @@
   <article class="post-content">
     <ul class="post-list">
     {% for item in site.music %}
-      {% if item.isLiveProjectPage %}
+      {% if item.published %}
           <li class="col three" style="padding-left: 0px; margin-bottom:0px;">
             {% if hasPreviousProject %}
             <div class="col clearfix three" style="margin-bottom: 5px; margin-top:10px;">
