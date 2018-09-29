@@ -1,6 +1,6 @@
 # Site settings
 title: Michael L. Rivera
-email: mike@mikeriv.com
+email: mlrivera@andrew.cmu.edu #mike@mikeriv.com
 description: > # this means to ignore newlines until "baseurl:"
   Technical HCI Researcher
 baseurl:   # the subpath of your site, e.g. /blog/
@@ -13,7 +13,7 @@ path_to_research: '/#research-section' #/research/
 path_to_music: '/music/'
 path_to_updates: '/updates/'
 linkSeparator: "-"
-keywords: technical hci research, human-computer interaction, michael l. rivera, mriveralee, mike rivera, hcii, phd, fabrication, 3d printing, interactivity
+keywords: technical hci research, human-computer interaction, michael l. rivera, mriveralee, mike rivera, hcii, phd, fabrication, 3d printing, interactivity, 3D printing, textiles, fabrication
 defaults:
   -
     scope:
@@ -51,9 +51,6 @@ collections:
     output: true
     future: true
     permalink: /research/:path/
-  poetry:
-    output: true
-    permalink: /poetry/:path/
   music:
     output: true
     permalink: /music/:path/
