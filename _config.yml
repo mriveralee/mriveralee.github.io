@@ -14,6 +14,12 @@ path_to_music: '/music/'
 path_to_updates: '/updates/'
 linkSeparator: "-"
 keywords: technical hci research, human-computer interaction, michael l. rivera, mriveralee, mike rivera, hcii, phd, fabrication, 3d printing, interactivity, 3D printing, textiles, fabrication
+
+scottHudsonUrl: http://www.cs.cmu.edu/~hudson/
+devlabWebsiteUrl: https://cmu-devlab.github.io/
+cmuWebsiteUrl: https://cmu.edu
+cmuCSDeptWebsiteUrl: https://cs.cmu.edu
+cmuHCIIDeptWebsiteUrl: https://hcii.cmu.edu
 defaults:
   -
     scope:

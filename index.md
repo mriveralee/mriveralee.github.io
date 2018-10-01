@@ -12,7 +12,7 @@ includedInNav: true
     <div class="col one right" style="padding: 0px 40px 20px 40px;">
 	   <img class="three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
     </div>
-    I am a Ph.D. student at the <a href="http://www.hcii.cmu.edu/" target="_blank">Human-Computer Interaction Institute</a> of <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>. My research program explores novel fabrication techniques and computational design methods. Generally, my work involves building or exploiting current electromechanical systems (<i>i.e.,</i> 3D printers) to enable new opportunities for fabricating sensors and interactive objects. I am advised by <a href="http://www.cs.cmu.edu/~hudson/" target="_blank">Scott Hudson</a> at the <a href="https://github.com/cmu-devlab/" target="_blank">Dev Lab</a>  
+    I am a Ph.D. student at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>. My research program explores novel fabrication techniques and computational design methods. Generally, my work involves building or exploiting current electromechanical systems (<i>i.e.,</i> 3D printers) to enable new opportunities for fabricating sensors and interactive objects. I am advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> at the <a href="{{site.devlabWebsiteUrl }}" target="_blank">Dev Lab</a>  
    	<br/>
     <br/>
     Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> and <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">curriculum vitae</a> to learn more about my work.
