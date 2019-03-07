@@ -245,11 +245,16 @@ margin-bottom: 0px;
 display: block;
 font-size: 42px;
 }
+
 /** Main description formatting ********************************/
-#portrait-img {
+#portrait-img-container {
     @include media-query($on-small-screen) {
         float: left;
         width: 100%;
+    }
+    .portrait-img {
+        border: 1px solid #efefef;
+        border-radius: 100%;
     }
     .name-header {
         text-align:center;

@@ -9,8 +9,8 @@ includedInNav: true
 
 <div class="post" style="margin-top: 44px;">
   <article class="post-content">
-    <div id="portrait-img" class="col one right" style="padding: 0px 40px 20px 40px;">
-        <img class="three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
+    <div id="portrait-img-container" class="col one right" style="padding: 0px 40px 20px 40px;">
+        <img class="portrait-img three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
         <div class="name-header">
             <h2>Michael L. Rivera</h2>
         </div>
