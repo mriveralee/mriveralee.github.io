@@ -20,7 +20,8 @@ z-index: 50;
 .header-title {
   float: right;
   margin-left: 4px;
-  padding: 2px;
+  padding: 3px;
+  font-size: 20px;
   line-height: 53px;
   display: block;
   @include media-query($on-small-screen) {
@@ -243,6 +244,25 @@ margin-bottom: 0px;
 .post-link {
 display: block;
 font-size: 42px;
+}
+/** Main description formatting ********************************/
+#portrait-img {
+    @include media-query($on-small-screen) {
+        float: left;
+        width: 100%;
+    }
+    .name-header {
+        text-align:center;
+        padding-top: 15px;
+        clear: both;
+        display: none;
+        @include media-query($on-small-screen) {
+            display: block;
+            h2 {
+                font-size: 27px;
+            }
+        }
+    }
 }
 
 /** Poem formatting ********************************************/
