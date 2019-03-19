@@ -28,6 +28,7 @@ defaults:
       includedInNav: false
       layout: page
       published: true
+      isPreview: false
 assetsDir: /assets
 
 # Show Future dated posts by default
