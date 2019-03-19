@@ -1,30 +1,33 @@
 ---
 layout: project
-published: false
+published: true
+isPreview: true
 title: "Desktop Electrospinning: A Single Extruder 3D Printer for Producing Rigid Plastic and Electrospun Textiles"
 authors:
   - Michael L. Rivera
   - Scott E. Hudson
-doiUrl: https://doi.org/XXXXXXX
-acmUrl: http://dl.acm.org/citation.cfm?id=XXXXXX
+doiUrl: https://doi.org/10.1145/3290605.3300434
+acmUrl: https://dl.acm.org/citation.cfm?id=3300434
 pdfUrl: chi19-desktop-electrospinning.pdf
-date: 2019-05-13 00:00
+videoUrl: https://www.youtube.com/watch?v=xxxxxx
+youtubeVideoId: xxxxxx
+date: 2019-05-04 00:00
 conferenceShortName: CHI 2019
 conferenceName: ACM SIGCHI
-teaserImageUrl: img/teaser_lasercut_pads_01.jpg
+teaserImageUrl: img/teaser_lamp_01.png
 abstract: >
-    We present a new type of 3D printer that combines rigid plastic printing with melt electrospinning-- a technique that uses electrostatic forces to create thin fibers from a molten polymer. Our printer enables custom-shaped textile sheets (similar in feel to wool felt) to be produced alongside rigid plastic using a single material (\ie  PLA) in a single process. We contribute open-source firmware, hardware specifications, and printing parameters to achieve melt electrospinning. Our approach offers new opportunities for fabricating interactive objects and sensors that blend the flexibility, absorbency and softness of produced electrospun textiles with the structure and rigidity of hard plastic for actuation, sensing, and tactility.
+    We present a new type of 3D printer that combines rigid plastic printing with melt electrospinning– a technique that uses electrostatic forces to create thin fbers from a molten polymer. Our printer enables custom-shaped textile sheets (similar in feel to wool felt) to be produced alongside rigid plastic using a single material (PLA) in a single process. We contribute open-source frmware, hardware specifcations, and printing parameters to achieve melt electrospinning. Our approach ofers new opportunities for fabricating interactive objects and sensors that blend the fexibility, absorbency and softness of produced electrospun textiles with the structure and rigidity of hard plastic for actuation, sensing, and tactile experiences.
 
-citation: "Michael L. Rivera and Scott E. Hudson. 2019. Desktop Electrospinning: A Single Extruder 3D Printer for Producing Rigid Plastic and Electrospun Textiles. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI '19). ACM, New York, NY, USA, XXX-XXX. DOI: https://doi.org/xxxxxxxxxx"
+citation: "Michael L. Rivera and Scott E. Hudson. 2019. Desktop Electrospinning: A Single Extruder 3D Printer for Producing Rigid Plastic and Electrospun Textiles. In CHI Conference on Human Factors in Computing Systems Proceedings (CHI 2019), May 4–9, 2019, Glasgow, Scotland UK. ACM, New York, NY, USA, 12 pages. https: //doi.org/10.1145/3290605.3300434"
 authorDescription: <span class="bold">Michael L. Rivera</span> and Scott E. Hudson
 ---
 
 {% include research/abstract.html abstract=page.abstract %}
 
-{% include img/img_row_two.html
-  pageUrl=page.url
-  img1="lasercut_pads_deconstructed_01a.jpg"
-  img2="printed_frame_deconstructed_01a.jpg"  %}
+{% if page.youtubeVideoId %}
+  <!--hr class="hr-section-sep" /-->
+  {% include media/youtube.html youtubeVideoId=page.youtubeVideoId %}
+{% endif %}
 
 <hr class="hr-section-sep" />
 
@@ -42,7 +45,7 @@ authorDescription: <span class="bold">Michael L. Rivera</span> and Scott E. Huds
 
     {% include img/img_row_one.html
       pageUrl=page.url
-      img1="lasercut_pads_01.jpg" %}
+      img1="lamp_01.png" %}
 
     {% include img/img_row_two.html
       pageUrl=page.url
