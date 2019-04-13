@@ -13,10 +13,7 @@
     <meta name="keywords" content="{{ site.keywords }}">
     {% if 'project' contains page.layout %}
 
-        <!-- <meta property="og:site_name" content="{{ site.title }}"/>
-        <meta property="og:description" content="{{ site.description }}"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{ site.url | append: page.url }}"/> -->
+
 
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@{{site.twitter_username}}">
@@ -24,6 +21,15 @@
         <meta name="twitter:title" content="{{title}}">
         <meta name="twitter:description" content="{{site.description}}">
         <meta name="twitter:image" content="{{site.url | append:site.assetsDir | append: page.url | append: page.teaserTwitterCardUrl}}">
+
+
+        <meta property="og:site_name" content="{{ site.title }}"/>
+        <meta property="og:description" content="{{ site.description }}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="{{ site.url | append: page.url }}"/>
+        <meta property="og:image" content="{{site.url | append:site.assetsDir | append: page.url | append: page.teaserTwitterCardUrl}}"/>
+
+
     {% else %}
         <meta property="og:title" content="{{title}}"/>
         <meta property="og:image" content="{{site.url | append: '/assets/img/logo/mr_logo_256x256.png'}}"/>
