@@ -36,7 +36,7 @@
                    <span class="research-meta-separator">{{ site.linkSeparator }}</span>
                   {% endif %}
                     {% if item.pdfUrl %}
-                      <a class="research-meta-link" target="_blank" href="{{site.assetsDir | append: item.url | append: item.pdfUrl }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a>
+                      <i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a class="research-meta-link" target="_blank" href="{{site.assetsDir | append: item.url | append: item.pdfUrl }}">Paper</a>
                       {% assign hasPrevLink = true %}
                     {% endif %}
 
@@ -44,8 +44,15 @@
                       {% if hasPrevLink %}
                        <span class="research-meta-separator">{{ site.linkSeparator }}</span>
                       {% endif %}
-                        <a class="research-meta-link" target="_blank" href="{{ item.videoUrl }}"><i class="fa fa-film" aria-hidden="true"></i> Video</a>
+                        <i class="fa fa-film" aria-hidden="true"></i> <a class="research-meta-link" target="_blank" href="{{ item.videoUrl }}"> Video</a>
                       {% assign hasPrevLink = true %}
+                    {% endif %}
+
+                    {% if item.sourceCodeUrl %}
+                        {% if hasPrevLink %}
+                            <span class="research-meta-separator">{{ site.linkSeparator }}</span>
+                        {% endif %}
+                        <i class="fa fa-code" aria-hidden="true"></i> <a class="research-meta-link" target="_blank" href="{{ item.sourceCodeUrl }}">Source Code</a>
                     {% endif %}
                   </span>
                 {% else %}

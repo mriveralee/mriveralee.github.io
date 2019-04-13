@@ -5,16 +5,14 @@
     <div class="citation-meta">
       <span class="three">
         {% if include.pdfUrl %}
-          <a class="" target="_blank" href="{{site.assetsDir | append: include.pageUrl | append: include.pdfUrl }}">
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download Paper</a>
+          <i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a class="" target="_blank" href="{{site.assetsDir | append: include.pageUrl | append: include.pdfUrl }}">Download Paper</a>
           {% assign hasPrevLink = true %}
         {% endif %}
         {% if include.doiUrl %}
             {% if hasPrevLink %}
               <span class="research-meta-separator">{{ site.linkSeparator }}</span>
             {% endif %}
-            <a class="" target="_blank" href="{{ include.doiUrl }}">
-              <i class="fa fa-external-link" aria-hidden="true"></i> DOI </a>
+            <i class="fa fa-external-link" aria-hidden="true"></i>  <a class="" target="_blank" href="{{ include.doiUrl }}">DOI</a>
         {% assign hasPrevLink = true %}
         {% endif %}
       </span>

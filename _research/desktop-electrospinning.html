@@ -1,7 +1,7 @@
 ---
 layout: project
 published: true
-isPreview: true
+isPreview: false
 title: "Desktop Electrospinning: A Single Extruder 3D Printer for Producing Rigid Plastic and Electrospun Textiles"
 authors:
   - Michael L. Rivera
@@ -9,12 +9,13 @@ authors:
 doiUrl: https://doi.org/10.1145/3290605.3300434
 acmUrl: https://dl.acm.org/citation.cfm?id=3300434
 pdfUrl: chi19-desktop-electrospinning.pdf
-videoUrl: https://www.youtube.com/watch?v=xxxxxx
-youtubeVideoId: xxxxxx
+videoUrl: https://youtu.be/pM7mMN2USF8
+youtubeVideoId: pM7mMN2USF8
 date: 2019-05-04 00:00
 conferenceShortName: CHI 2019
 conferenceName: ACM SIGCHI
 teaserImageUrl: img/teaser_lamp_01.png
+sourceCodeUrl: https://github.com/mriveralee/desktop-electrospinning
 abstract: >
     We present a new type of 3D printer that combines rigid plastic printing with melt electrospinning– a technique that uses electrostatic forces to create thin fibers from a molten polymer. Our printer enables custom-shaped textile sheets (similar in feel to wool felt) to be produced alongside rigid plastic using a single material (PLA) in a single process. We contribute open-source firmware, hardware specifications, and printing parameters to achieve melt electrospinning. Our approach offers new opportunities for fabricating interactive objects and sensors that blend the flexibility, absorbency and softness of produced electrospun textiles with the structure and rigidity of hard plastic for actuation, sensing, and tactile experiences.
 
@@ -24,10 +25,13 @@ authorDescription: <span class="bold">Michael L. Rivera</span> and Scott E. Huds
 
 {% include research/abstract.html abstract=page.abstract %}
 
+
 {% if page.youtubeVideoId %}
   <!--hr class="hr-section-sep" /-->
   {% include media/youtube.html youtubeVideoId=page.youtubeVideoId %}
 {% endif %}
+
+{% include research/source-code.html sourceCodeUrl=page.sourceCodeUrl %}
 
 <hr class="hr-section-sep" />
 
@@ -44,27 +48,75 @@ authorDescription: <span class="bold">Michael L. Rivera</span> and Scott E. Huds
   <div class="media_container">
 
     {% include img/img_row_one.html
-      pageUrl=page.url
-      img1="lamp_01.png" %}
+        pageUrl=page.url
+        img1="lamp_02.png" %}
+
 
     {% include img/img_row_two.html
       pageUrl=page.url
-      img1="lasercut_pads_02.jpg"
-      img2="lasercut_pads_03.jpg" %}
+      img1="lamp_piezo_fibers_01.png"
+      img2="lamp_dark_01.png" %}
+
+
+    {% include img/img_row_three.html
+        pageUrl=page.url
+        img1="flower_closed_01.png"
+        img2="flower_spray_01.png"
+        img3="flower_open_01.png" %}
 
     {% include img/img_row_two.html
       pageUrl=page.url
-      img1="printed_frame_02.jpg"
-      img2="printed_frame_01a.jpg" %}
+      img1="phone_stand_back_01.png"
+      img2="phone_stand_folded_01.png" %}
 
     {% include img/img_row_one.html
       pageUrl=page.url
-      img1="printed_frame_03.jpg"  %}
+      img1="sheep_comic_02.png" %}
+
+    {% include img/img_row_one.html
+      pageUrl=page.url
+      img1="process_tests_02.png" %}
+
+    {% include img/img_row_two.html
+      pageUrl=page.url
+      img1="capacitive_sensor_touch_01.png"
+      img2="capacitive_sensor_touch_02.png" %}
+
+
+    {% include img/img_row_one.html
+        pageUrl=page.url
+        img1="printer_dual_extruders_02.png" %}
 
     {% include img/img_row_two.html
         pageUrl=page.url
-        img1="printed_frame_04.jpg"
-        img2="printed_frame_snap_fit_01.jpg" %}
+        img1="printer_close_up_01.png"
+        img2="extrude_fibers_01.png" %}
+
+    {% include img/img_row_two.html
+        pageUrl=page.url
+        img1="lamp_flat_01.png"
+        img2="hinge_01.png" %}
+
+    {% include img/img_row_one.html
+      pageUrl=page.url
+      img1="printing_types_01.png"  %}
+
+    {% include img/img_row_one.html
+      pageUrl=page.url
+      img1="liquid_absorption_sensing_test_01.png" %}
+
+
+
+      <!-- {% include img/img_row_one.html
+        pageUrl=page.url
+        img1="piezo_sensing_screen_01.png" %} -->
+<!--
+    {% include img/img_row_one.html
+        pageUrl=page.url
+        img1="piezo-sensor-combined-01.png"  %} -->
+
+
+
 
   </div><!-- end media container -->
 </div>
