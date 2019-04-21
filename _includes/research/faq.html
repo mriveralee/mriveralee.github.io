@@ -1,0 +1,17 @@
+<div>
+    <h3 class="mb-10">frequently asked questions</h3>
+    <div class="faq-wrapper">
+        {% for item in include.faqItems %}
+            {% assign questionText = item.question %}
+            {% assign answerText = item.answer %}
+            <div class="faq-item">
+                <span class="faq-question">
+                {{ questionText }}
+                </span>
+                <p class="faq-answer">
+                    {{ answerText }}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
