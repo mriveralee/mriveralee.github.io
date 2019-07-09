@@ -1,7 +1,7 @@
 ---
 layout: project
 published: true
-isPreview: true
+isPreview: false
 title: "Input, Output and Construction Methods for Custom Fabrication of Room-Scale Deployable Pneumatic Structures"
 authors:
   - Saiganesh Swaminathan
@@ -10,25 +10,31 @@ authors:
   - Zheng Luo
   - Kadri Bugra Ozutemiz
   - Scott E. Hudson
-doiUrl: https://doi.org/XXXXXXX
-acmUrl: http://dl.acm.org/citation.cfm?id=XXXXXX
+doiUrl: https://doi.org/10.1145/3328933
+acmUrl: https://dl.acm.org/citation.cfm?doid=3341982.3328933
 pdfUrl: imwut19-inflatables.pdf
+videoUrl: https://youtu.be/7rIyMsiYJww
+youtubeVideoId: 7rIyMsiYJww
 date: 2019-05-01 00:00
 conferenceShortName: IMWUT 2019
 conferenceName: ACM IMWUT 2019
 teaserImageUrl: img/teaser_canopy_light_to_face_01.png
 teaserTwitterCardUrl: img/teaser_canopy_light_to_face_01_card.png
 abstract: >
-  In this paper, we explore the future of designing room-scale deployable structures that can be fabricated with interaction and thus be responsive to human input and environments. We demonstrate three types of sensing methods — acoustic, capacitive and pressure —in order to embed input into our structures. Our sensing methods enable users to perform gestures such as knock, squeeze and swipe with specific parts of our fabricated structure such as doors, windows, etc. and make them interactive. As exemplars, we design a responsive canopy, an interactive geodesic dome and a portable table. All our designs are based on inflatable trusses which are custom fabricated for a particular purpose.  These can be deployed from a compact deflated state to a much larger inflated state which takes on a desired form and provides desired interactivity.
+  We examine the future of designing room-scale deployable pneumatic structures that can be fabricated with interactive capabilities and thus be responsive to human input and environments. While there have been recent advances in fabrication methods for creating large-scale structures, they have mainly focused around creating passive structures. Hence in this work, we collectively tackle three main challenges that need to be solved for designing room-scale interactive deployable structures namely -- the input, output (actuation) and construction methods. First, we explore three types of sensing methods --- acoustic, capacitive and pressure --- in order to embed input into these structures. These sensing methods enable users to perform gestures such as knock, squeeze and swipe with specific parts of our fabricated structure such as doors, windows, etc. and make them interactive. Second, we explore three types of actuation mechanisms -- inflatable tendon drive, twisted tendon drive and roll bending actuator -- that are implemented at structural scale and can be embedded into our structures to enable a variety of responsive actuation. Finally, we provide a construction method to custom fabricate and assemble inter-connected pneumatic trusses with embedded sensing and actuation capability to prototype interactions with room-scale deployable structures.
 
-
-citation: "Saiganesh Swaminathan, Michael L. Rivera, Runchang Kang, Zheng Luo, Kadri B. Ozutemiz, and Scott E. Hudson. 2019. Input, Output and Construction Methods for Custom Fabrication of Room-Scale Deployable Pneumatic Structures. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 3, 1, Article XXX (May 2019), XX pages. DOI: https://doi.org/10.1145/XXXXXX"
+citation: "Saiganesh Swaminathan, Michael L. Rivera, Runchang Kang, Zheng Luo, Kadri B. Ozutemiz, and Scott E. Hudson. 2019. Input, Output and Construction Methods for Custom Fabrication of Room-Scale Deployable Pneumatic Structures. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 3, 2, Article 62 (June 2019), 17 pages. DOI: https://doi.org/10.1145/3328933"
 authorDescription: Saiganesh Swaminathan, <span class='bold'>Michael L. Rivera</span>, Runchang Kang, Zheng Luo, Kadri B. Ozutemiz, and Scott E. Hudson
 
 ---
 
 {% include research/abstract.html abstract=page.abstract %}
 
+
+{% if page.youtubeVideoId %}
+  <!--hr class="hr-section-sep" /-->
+  {% include media/youtube.html youtubeVideoId=page.youtubeVideoId %}
+{% endif %}
 
 <hr class="hr-section-sep" />
 
@@ -48,24 +54,6 @@ authorDescription: Saiganesh Swaminathan, <span class='bold'>Michael L. Rivera</
       pageUrl=page.url
       img1="canopy_light_to_face_01.png" %}
 
-    {% include img/img_row_two.html
-      pageUrl=page.url
-      img1="lasercut_pads_02.jpg"
-      img2="lasercut_pads_03.jpg" %}
-
-    {% include img/img_row_two.html
-      pageUrl=page.url
-      img1="printed_frame_02.jpg"
-      img2="printed_frame_01a.jpg" %}
-
-    {% include img/img_row_one.html
-      pageUrl=page.url
-      img1="printed_frame_03.jpg"  %}
-
-    {% include img/img_row_two.html
-        pageUrl=page.url
-        img1="printed_frame_04.jpg"
-        img2="printed_frame_snap_fit_01.jpg" %}
 
   </div><!-- end media container -->
 </div>
