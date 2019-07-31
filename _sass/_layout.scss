@@ -296,6 +296,10 @@ font-size: 16px;
 }
 
 /** Research Formatting *****************************************/
+.research-item-teaser-img {
+    border: 1px solid #efefef;
+}
+
 .research-primary-img-container {
     @include media-query($on-small-screen) {
       width: 100% !important;
