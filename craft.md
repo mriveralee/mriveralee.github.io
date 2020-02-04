@@ -19,7 +19,7 @@ includedInNav: false
 
 <hr class="hr-partial-sep mt-30 mb-30" />
 
-<!-- {% include blog/woodworking-list-section.html title="woodworking" assetsPageUrl="/making/" %} -->
+{% include blog/woodworking-list-section.html title="woodworking" assetsPageUrl="/making/" %}
 
 
 
