@@ -1,0 +1,13 @@
+<div class="media-container">
+  <h3 class="mb-30">{{include.title}}</h3>
+  <div class="media-imgs">
+    {% include img/img_row_one.html
+        pageUrl=page.url
+        img1="lamp_02.png" %}
+
+    {% include img/img_row_two.html
+      pageUrl=page.url
+      img1="phone_stand_back_01.png"
+      img2="phone_stand_folded_01.png" %}
+  </div>
+</div>
