@@ -17,21 +17,17 @@ includedInNav: true
             <h2>Michael L. Rivera</h2>
         </div>
       <!-- <hr class="col whole hr-partial-sep"/> -->
-      <div class="contacticon" style="font-size:12px; padding-left:10px;" >
-        <a href="mailto:{{site.email}}" title="Email">
-          <i class="contact-icons-list-item vert-middle fa fa-envelope-square"></i>
-           <span class="vert-middle" style="padding-top: 3px;">Email</span>
-        </a>
-        <br/>
-        <a href="https://github.com/{{site.github_username}}" target="_blank" title="Github">
-          <i class="contact-icons-list-item vert-middle fa fa-github-square"></i>
-          <span class="vert-middle" style="padding-top: 3px;">Github</span>
-        </a>
-        <br/>
-        <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">
-          <i id="cv-icon" class="contact-icons-list-item vert-middle fa fa-file-text-o"></i>
-          <span class="vert-middle" style="padding-top: 3px;">Curriculum Vitae</span>
-        </a>
+      <div class="contact-text-items col three" style="text-align:center;" >
+        <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">Curriculum Vitae</a>
+        <br class="hidden-break-wrap"/>
+        <span class="hidden-unless-small-screen"> / </span>       
+        <a href="{{site.google_scholar_url}}" title="Google Scholar" target="_blank">Google Scholar</a>
+        <br class="hidden-break-wrap"/>
+        <span class="hidden-unless-small-screen"> / </span>
+        <a href="https://github.com/{{site.github_username}}" target="_blank" title="Github">Github</a>
+        <br class="hidden-break-wrap"/>
+        <span class="hidden-unless-small-screen"> / </span>
+        <a href="mailto:{{site.email}}" title="Email">Email</a>
         <br/>
       </div>
     </div>

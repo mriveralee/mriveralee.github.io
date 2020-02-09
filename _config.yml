@@ -8,6 +8,7 @@ url:  https://www.mikeriv.com # the base hostname & protocol for your site
 twitter_username: mriveralee
 github_username:  mriveralee
 linkedin_username: mikeriv
+google_scholar_url: https://scholar.google.com/citations?hl=en&user=n7yV9DYAAAAJ
 path_to_cv: /assets/downloads/RIVERA_MICHAEL_CV.pdf
 path_to_research: '/#research-section' #/research/
 path_to_music: '/music/'

@@ -149,6 +149,7 @@ list-style: none;
 .round-corners {
   border-radius: 2px;
 }
+
 .contacticon {
 font-size: 40px;
 display:block;
@@ -160,10 +161,12 @@ margin: 10px;
     }
   }
 }
+
 .contact-icons-list-item {
     font-size: 26px !important;
     padding-right: 2px;
 }
+
 #cv-icon {
   background: $theme-color;
     padding-top: 4.5px;
@@ -178,6 +181,31 @@ margin: 10px;
     text-decoration: none;
     background-color: $text-color;
   }
+}
+
+.contact-text-items {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px !important;
+    @include media-query($on-small-screen) {
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 0px !important;
+    }
+}
+.hidden-break-wrap {
+    display: block;
+    @include media-query($on-small-screen) {
+        display: none;
+    }
+}
+
+.hidden-unless-small-screen {
+    display: none;
+    @include media-query($on-small-screen) {
+        display: inline-block;
+    }
 }
 
 .center{
@@ -271,6 +299,7 @@ font-size: 42px;
         display: none;
         @include media-query($on-small-screen) {
             display: block;
+            padding-bottom: 5px;
             h2 {
                 font-size: 27px;
             }
