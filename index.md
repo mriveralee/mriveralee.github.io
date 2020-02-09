@@ -9,12 +9,31 @@ includedInNav: true
 
 <div class="post" style="margin-top: 44px;">
   <article class="post-content">
-    <div id="portrait-img-container" class="col one right" style="padding: 0px 40px 20px 40px;">
-        <img class="portrait-img three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
+    <div id="portrait-img-container" class="col one right">
+        <div  class="col three right" style="padding: 0px 40px 0px 40px;">
+            <img class="portrait-img three right round-corners" src="{{site.assetsDir | append: '/img/self/me_440x440.jpg'}}">
+        </div>
         <div class="name-header">
             <h2>Michael L. Rivera</h2>
         </div>
-
+      <!-- <hr class="col whole hr-partial-sep"/> -->
+      <div class="contacticon" style="font-size:12px; padding-left:10px;" >
+        <a href="mailto:{{site.email}}" title="Email">
+          <i class="contact-icons-list-item vert-middle fa fa-envelope-square"></i>
+           <span class="vert-middle" style="padding-top: 3px;">Email</span>
+        </a>
+        <br/>
+        <a href="https://github.com/{{site.github_username}}" target="_blank" title="Github">
+          <i class="contact-icons-list-item vert-middle fa fa-github-square"></i>
+          <span class="vert-middle" style="padding-top: 3px;">Github</span>
+        </a>
+        <br/>
+        <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">
+          <i id="cv-icon" class="contact-icons-list-item vert-middle fa fa-file-text-o"></i>
+          <span class="vert-middle" style="padding-top: 3px;">Curriculum Vitae</span>
+        </a>
+        <br/>
+      </div>
     </div>
     I am a Ph.D. student at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> in the School of Computer Science of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>. I am advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> at the <a href="{{site.devlabWebsiteUrl }}" target="_blank">Dev Lab</a>.
     <br/>
@@ -27,24 +46,6 @@ includedInNav: true
     <br/>
     Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> and <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">curriculum vitae</a> to learn more about my work.
   	<br style="clear:both;"/>
-  	<!-- <hr class="hr-partial-sep"/> -->
-    <span class="contacticon center">
-      <a class="fa-icon-highlight" href="mailto:{{site.email}}" title="Email">
-        <i class="vert-middle fa fa-envelope-square"></i>
-      </a>
-      <a class="fa-icon-highlight" href="https://github.com/{{site.github_username}}" target="_blank" title="Github">
-        <i class="vert-middle fa fa-github-square"></i>
-      </a>
-      <a class="fa-icon-highlight" href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">
-        <i id="cv-icon" class="vert-middle fa fa-file-text-o"></i>
-      </a>
-      <a class="fa-icon-highlight" href="https://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" title="LinkedIn">
-        <i class="vert-middle fa fa-linkedin-square"></i>
-      </a>
-      <a class="fa-icon-highlight" href="https://twitter.com/{{site.twitter_username}}" target="_blank" title="Twitter">
-        <i class="vert-middle fa fa-twitter-square"></i>
-      </a>
-    </span>
   </article>
 </div>
 
