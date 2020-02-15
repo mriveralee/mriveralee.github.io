@@ -12,7 +12,7 @@ var NUM_CYCLE = 0;
 var RADIUS_ARRAY_MAP = new Array();
 // Size of the Radius Array Map
 RADIUS_ARRAY_MAP.length = TOTAL_NOTES_IN_SONG;
-var CIRCLE_COLOR = {r:204, g:0, b:102, cssColor:"#CC0066"};
+var CIRCLE_COLOR = {r:239, g:208, b:158, cssColor:"#EFD09E"};
 var BLACK = {r:0, g:0, b:0, cssColor:"#000000"};
 var WHITE = {r:255, g:255, b:255, cssColor:"#FFFFFF"};
 
@@ -28,7 +28,7 @@ function initializeRadiusArray()
 var generateNoteCircle = function(note)
 {
 	var place = NUM_CYCLE % 8;
-	// Increment the number in this 
+	// Increment the number in this
 	NUM_CYCLE++;
 	// Set up the color percentage
 	var color_percentage = Math.round((note/87)*100);
@@ -49,7 +49,7 @@ var generateNoteCircle = function(note)
 
 }
 
-// Circle Class	
+// Circle Class
 var NoteCircle = function(x,y,r, color, note)
 {
 	this.x = x;
@@ -76,19 +76,19 @@ var NoteCircle = function(x,y,r, color, note)
 		this.opacity -= this.opacitySpeed;
 		this.time++;
 	}
-	
+
 	this.getX = function()
 	{
 		return this.x;
 	}
-	
+
 	this.getY = function()
 	{
 		return this.y;
 	}
-	
+
 	this.move = function()
-	{			
+	{
 		if (this.isBaseNote){
 			this.startY += this.dy;
 			this.x = this.startX + Math.cos(this.angle) * 100.0;
@@ -98,7 +98,7 @@ var NoteCircle = function(x,y,r, color, note)
 		else {
 			this.y += this.dy;
 		}
-		
+
 		if(this.y > suite.canvasEl.height || this.y < 0){
 			this.dy = this.dy*-1;
 			this.opacity =0;
@@ -118,13 +118,13 @@ var draw = function()
 				NOTE_CIRCLE_ARRAY[i].move();
 				NOTE_CIRCLE_ARRAY[i].draw();
 			}
-		}	
+		}
 	}
 }
 
-// Erases the Canvas 
-var clearCanvas = function() 
-{	
+// Erases the Canvas
+var clearCanvas = function()
+{
 	var a = 8;
 	var b = 75;
 	var c = 138;
@@ -134,7 +134,7 @@ var clearCanvas = function()
 	//suite.canvasObj.fillStyle = "#084B8A";
 	suite.canvasObj.fillRect(0, 0,suite.canvasEl.width,  suite.canvasEl.height);
 	// This clears the drawing, remove if we want to keep circle track history
-	// suite.canvasObj.fillRect(0, 0, suite.canvasEl.width, suite.canvasEl.height); 
+	// suite.canvasObj.fillRect(0, 0, suite.canvasEl.width, suite.canvasEl.height);
 }
 
 // Clears out the Note-Circle Array and re-initializes it
@@ -154,7 +154,7 @@ var clearEmptyNoteCircles = function(){
 			NOTE_CIRCLE_ARRAY.splice(i,1);
 			i--;
 		}
-	}	
+	}
 }
 
 
@@ -186,23 +186,23 @@ var makeGradientColor = function(color1, color2, percent) {
     newColor.r = makeChannel(color1.r, color2.r);
     newColor.g = makeChannel(color1.g, color2.g);
     newColor.b = makeChannel(color1.b, color2.b);
-    newColor.cssColor = "#" + 
-                        makeColorPiece(newColor.r) + 
-                        makeColorPiece(newColor.g) + 
+    newColor.cssColor = "#" +
+                        makeColorPiece(newColor.r) +
+                        makeColorPiece(newColor.g) +
                         makeColorPiece(newColor.b);
     return(newColor);
 }
 
 /*
 // Get Key Input
-function onKeyDown(evt) 
+function onKeyDown(evt)
 {
 	if(evt.keyCode == 39) rightDown = true;
 	else if(evt.keyCode == 37) leftDown = true;
 	dx = dx*-1;
 }
 
-function onKeyUp(evt) 
+function onKeyUp(evt)
 {
 	if (evt.keyCode == 39) rightDown = false;
 	else if (evt.keyCode == 37) leftDown = false;

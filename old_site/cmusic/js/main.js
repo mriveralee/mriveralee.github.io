@@ -1,4 +1,4 @@
-/** 
+/**
  * Cmusic - A Musical Visualization
  * @author Michael Rivera
  * Information Design Final Project - Spring 2012
@@ -6,7 +6,7 @@
  **/
 
 // Color of the canvas background.
-var CANVAS_COLOR = "#101D38";
+var CANVAS_COLOR = "#3D1D40";
 //"#3f41b0"; //"#543040";
 // Color Storage For When In Party Mode
 var ORIGINAL_CANVAS_COLOR = CANVAS_COLOR;
@@ -72,11 +72,11 @@ var MIDI_MAP = {
   '2': 2,
   '3': 3,
   '4': 4,
-  '5': 5, 
+  '5': 5,
   '6': 6,
   '7': 7,
-  '8': 8, 
-  '9': 9, 
+  '8': 8,
+  '9': 9,
   '10': 10,
   '11': 11,
   '12': 12,
@@ -135,7 +135,7 @@ var MIDI_MAP = {
 };
 
 
-/** 
+/**
  * SoundManager initialization.
  */
 soundManager.url ='swf/sm2/'; // directory where SM2 .SWFs live
@@ -168,7 +168,7 @@ suite.everythingIsReady = function() {
   setInterval(updateLoop, UPDATE_INTERVAL);
   setInterval(draw, UPDATE_CIRCLES_INTERVAL);
   animateSubTitle();
-  
+
 };
 
 
@@ -191,12 +191,12 @@ var stopIntervals = function(){
  * Start the loading process.
  */
 suite.init = function() {
-  
+
   suite.ready = false;
   suite.initMidiMap();
   // set v=# in  url
   suite.urlVersion = parseInt(getQueryVariable('v'));
-  
+
   // add resize listener
   window.addEventListener('resize', rsize, false);
   // mouse actions // IN CASE WE WANT TO ADD ONCLICK LISTENERS
@@ -204,16 +204,16 @@ suite.init = function() {
     mouseX = e.pageX; mouseY = e.pageY;
     //console.log("MOUSE (" + mouseX + ", "+ mouseY + ")");
   }, false);
-  document.addEventListener('mousedown', function (e) { 
+  document.addEventListener('mousedown', function (e) {
     mousePressed = true;
     //if (suite.machine.mouseDown != undefined) suite.machine.mouseDown(e);
     e.preventDefault();
   }, false);
-  document.addEventListener('mouseup', function (e) { 
+  document.addEventListener('mouseup', function (e) {
     mousePressed = false;
     /*if (suite.machine.mouseUp != undefined) suite.machine.mouseUp(e);
-  */}, false);  
-  
+  */}, false);
+
   // PARTY MODE && PAUSED MODE
   document.addEventListener('keydown', function(e) {
     //console.log("KEY PRESSED");
@@ -221,9 +221,9 @@ suite.init = function() {
     // If Key == {O}
     if(e.which == 79) {
       PARTY_MODE = (!PARTY_MODE);
-      if (PARTY_MODE) 
+      if (PARTY_MODE)
         CANVAS_COLOR = "##2e30a6";
-      else 
+      else
         CANVAS_COLOR = ORIGINAL_CANVAS_COLOR;
     }
     // If Key == {P}
@@ -269,7 +269,7 @@ suite.initMidiMap = function() {
 var updateLoop = function() {
   if (suite.ready && SONG_RESTART == 0 && isActive && !IS_PAUSED){
     var val = parseInt(SONG_DATA_ARRAY[SONG_PLACE]);
-    suite.smPlayNote(val, 1, 0);
+    suite.smPlayNote(val, 1.00, 0);
     //console.log("updateLoop: Played SONG_PLACE- " + SONG_PLACE);
 
     //var color_selector = (Math.round(Math.random()*1000) + (SONG_PLACE-1))%5;
@@ -284,12 +284,20 @@ var updateLoop = function() {
       eraseNoteCircleArray();
     }
   }
-  else if (SONG_RESTART >0 && isActive && suite.ready && !IS_PAUSED){ 
+  else if (SONG_RESTART >0 && isActive && suite.ready && !IS_PAUSED){
     SONG_RESTART--;
   }
 
   //suite.machine.upd();
 };
+
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
 
 // tempoary - put this in init function called from body.onLoad
 init = function() {
@@ -310,7 +318,7 @@ suite.smLoadSnd = function(indPm) {
     multiShotEvents: false,
     onload: function() { suite.smLoadedSnd(this['ahcInd']); }
   });
-  snd['ahcInd'] = indPm; // store its index number  
+  snd['ahcInd'] = indPm; // store its index number
   NUM_NOTES_LOADED++;
 
 }
@@ -330,11 +338,11 @@ suite.smLoadedSnd = function(indPm) {
     suite.smLoadSnd(suite.indNoteLd); // Else load the next one.
     updateLoadingPercentage();
   }
-  /*  
+  /*
   // Tell it we are done, so update loop will load next sound.
   suite.currSoundLoaded = true;
   */
-} 
+}
 
 /**
  * Tell Sound Manager to play a particular note at given pitch, volume, pan.
@@ -349,8 +357,8 @@ suite.smPlayNote = function(pitchPm, volPm, panPm) {
   //snd.stop();
   // play normally
   snd.play({
-    volume:100*volPm,
-    pan:100*panPm
+    volume:100.0*volPm,
+    pan:100.0*panPm
   });
 };
 
@@ -394,7 +402,7 @@ var updateLoadingPercentage = function(){
   }
 }
 
-// Animates the Title Sequence 
+// Animates the Title Sequence
 var animateTitle = function(){
   $('#title').html("<span style='font-family: Helvetica'>Prelude in C Major</span><br> by J.S. Bach");
    $('#title').animate({
@@ -403,8 +411,8 @@ var animateTitle = function(){
     // Animation complete.
   });
      $('#title').animate({
-    opacity: 0.0}, 
-    4000, 
+    opacity: 0.0},
+    4000,
     function() {
     // Animation complete.
   });
@@ -414,14 +422,14 @@ var animateTitle = function(){
 var animateSubTitle = function(){
   $('#visual-title').text('A Musical Visualization');
   $('#visual-title').animate({
-    opacity: 1.0}, 
-    3000, 
+    opacity: 1.0},
+    3000,
     function() {
     // Animation complete.
   });
   $('#visual-title').animate({
-    opacity: 0.0}, 
-    4000, 
+    opacity: 0.0},
+    4000,
     function() {
     // Animation complete.
   });
@@ -435,7 +443,7 @@ $(document).ready(function() {
 
 
 // Displays the Help Information Dialogue
- var showHelpDialog = function(){ 
+ var showHelpDialog = function(){
     $('#help-dialog').dialog('open');
   }
 
@@ -444,7 +452,7 @@ $(function() {
     $("#help-dialog").dialog({
       autoOpen: false,    // set to false
       minHeight: 350,
-      maxHeight: 350, 
+      maxHeight: 350,
       minWidth: 600,
       maxWidth: 600,
       modal: false,
@@ -452,8 +460,8 @@ $(function() {
               $('#sheet-link').blur();
               //$('.ui-dialog :button').blur();
           },
-      navigation: true 
-          
+      navigation: true
+
         })
     });
 });
@@ -462,16 +470,16 @@ $(function() {
 // Convert Hex String to RGB/RGBa Value
 function hex2rgb(hex, opacity) {
   var rgb = hex.replace('#', '').match(/(.{2})/g);
- 
+
   var i = 3;
   while (i--) {
     rgb[i] = parseInt(rgb[i], 16);
   }
- 
+
   if (typeof opacity == 'undefined') {
     return 'rgb(' + rgb.join(', ') + ')';
   }
- 
+
   return 'rgba(' + rgb.join(', ') + ', ' + opacity + ')';
 };
 
@@ -480,13 +488,13 @@ function hex2rgb(hex, opacity) {
  * @param {Element} variable string (e.g. "id")
  * @return {number} variable value (e.g. 25)
  */
-function getQueryVariable(variable) { 
-  var query = window.location.search.substring(1); 
-  var vars = query.split("&"); 
-  for (var i=0;i<vars.length;i++) { 
-    var pair = vars[i].split("="); 
-    if (pair[0] == variable) { 
-      return pair[1]; 
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if (pair[0] == variable) {
+      return pair[1];
     }
   }
   return null;
