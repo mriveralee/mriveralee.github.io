@@ -5,7 +5,8 @@
 </p>
 </header>
 <ul class="post-list">
-{% for item in site.music %}
+ {% assign musicProjects = site.music | sort: 'date' | reverse %}
+{% for item in musicProjects %}
   {% if item.published %}
       <li class="col three" style="padding-left: 0px; padding-right: 0px; margin-bottom:0px;">
         {% if hasPreviousProject %}
