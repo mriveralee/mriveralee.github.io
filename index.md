@@ -31,13 +31,13 @@ includedInNav: true
         <br/>
       </div>
     </div>
-    I am a Ph.D. student at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> in the School of Computer Science of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>. I am advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> at the <a href="{{site.devlabWebsiteUrl }}" target="_blank">Dev Lab</a>.
+    I am a Ph.D. candidate at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> in the School of Computer Science of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>. I am advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> at the <a href="{{site.devlabWebsiteUrl }}" target="_blank">Dev Lab</a>.
     <br/>
     <br/>
-    The goal of my research is to empower users of personal fabrication technologies to prototype interactive experiences and have real world impact in areas like sustainability.
+    My research sits at the intersection of technical human-computer interaction (HCI), material science and digital fabrication. I develop new capabilities for digital fabrication technologies like 3D printers, and explore how they might better serve the people who use them.
     <br/>
     <br/>
-    I design and build consumer-grade machines such as 3D printers. These machines incorporate human-friendly materials (<i>e.g.,</i> textiles), or blend together different processes like 3D printing with melt electrospinning. I supplement these machines with open-source designs and software tools to make them useful and usable to end-users.
+    To this end, I have introduced fabrication techniques for materials that are soft, compliant, or environmentally-sustainable while demonstrating applications in sensing, actuation, and interactive devices. I supplement these techniques with open-source hardware designs and software tools to make them useful and approachable to end-users.
     <br/>
     <br/>
     Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> and <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">curriculum vitae</a> to learn more about my work.
