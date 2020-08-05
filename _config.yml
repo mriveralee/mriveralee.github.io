@@ -53,7 +53,7 @@ google_analytics: UA-26246031-4
 
 collections:
   portfolio:
-    output: true
+    output: false
     permalink: /portfolio/:path/
   research:
     output: true
@@ -62,6 +62,9 @@ collections:
   music:
     output: true
     permalink: /music/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
 
 plugins:
   - jekyll-paginate
