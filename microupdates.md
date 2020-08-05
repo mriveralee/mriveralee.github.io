@@ -4,6 +4,7 @@ title: updates
 permalink: /updates/
 includedInNav: false
 hideHeader: true
+published: false
 ---
 
 <h1 class="project-title" style="margin-bottom: 30px;">{{ page.title }}</h1>
