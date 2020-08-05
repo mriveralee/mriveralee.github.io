@@ -18,7 +18,7 @@ includedInNav: true
         </div>
       <!-- <hr class="col whole hr-partial-sep"/> -->
       <div class="contact-text-items col three" style="text-align:center;" >
-        <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">Curriculum Vitae</a>
+        <a href="{{site.url_for_cv}}" target="_blank" title="Resume/CV">Curriculum Vitae</a>
         <br class="hidden-break-wrap"/>
         <span class="hidden-unless-small-screen"> / </span>       
         <a href="{{site.google_scholar_url}}" title="Google Scholar" target="_blank">Google Scholar</a>
@@ -40,7 +40,7 @@ includedInNav: true
     To this end, I have introduced fabrication techniques for materials that are soft, compliant, or environmentally-sustainable while demonstrating applications in sensing, actuation, and interactive devices. I supplement these techniques with open-source hardware designs and software tools to make them useful and approachable to end-users.
     <br/>
     <br/>
-    Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> and <a href="{{site.path_to_cv}}" target="_blank" title="Resume/CV">curriculum vitae</a> to learn more about my work.
+    Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> and <a href="{{site.url_for_cv}}" target="_blank" title="Resume/CV">curriculum vitae</a> to learn more about my work.
   	<br style="clear:both;"/>
   </article>
 </div>
