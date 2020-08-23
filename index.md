@@ -31,7 +31,7 @@ includedInNav: true
         <br/>
       </div>
     </div>
-    I am a Ph.D. candidate at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> in the School of Computer Science of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>. I am advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> at the <a href="{{site.devlabWebsiteUrl }}" target="_blank">Dev Lab</a>.
+    I am a Ph.D. candidate at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> in the School of Computer Science of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>. I am advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> at the <a href="{{site.devlabWebsiteUrl }}" target="_blank">DevLab</a>.
     <br/>
     <br/>
     My research sits at the intersection of technical human-computer interaction (HCI), material science and digital fabrication. I develop new capabilities for digital fabrication technologies like 3D printers, and explore how they might better serve the people who use them.
