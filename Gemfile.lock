@@ -8,6 +8,13 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    bibtex-ruby (4.4.7)
+      latex-decode (~> 0.0)
+    citeproc (1.0.10)
+      namae (~> 1.0)
+    citeproc-ruby (1.1.12)
+      citeproc (~> 1.0, >= 1.0.9)
+      csl (~> 1.5)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -17,6 +24,10 @@ GEM
       ruby-enum (~> 0.5)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    csl (1.5.1)
+      namae (~> 1.0)
+    csl-styles (1.0.1.10)
+      csl (~> 1.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -146,6 +157,11 @@ GEM
       typhoeus (>= 0.7, < 2.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-scholar (5.16.0)
+      bibtex-ruby (~> 4.0, >= 4.0.13)
+      citeproc-ruby (~> 1.0)
+      csl-styles (~> 1.0)
+      jekyll (~> 3.0)
     jekyll-seo-tag (2.4.0)
       jekyll (~> 3.3)
     jekyll-sitemap (1.2.0)
@@ -201,6 +217,7 @@ GEM
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
     kramdown (1.16.2)
+    latex-decode (0.3.1)
     liquid (4.0.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -217,6 +234,7 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.11.3)
     multipart-post (2.0.0)
+    namae (1.0.1)
     net-dns (0.8.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -258,6 +276,7 @@ PLATFORMS
 DEPENDENCIES
   feedjira
   github-pages
+  jekyll-scholar
 
 BUNDLED WITH
-   1.16.1
+   1.16.2

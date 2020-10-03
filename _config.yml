@@ -66,12 +66,19 @@ collections:
   notes:
     output: true
     permalink: /notes/:path/
+# Jekyll-scholar settings
+scholar:
+    style: acm-sigchi-proceedings
+    locale: en
+    source: ./_bibliography
+    bibliography: references.bib
 
 plugins:
   - jekyll-paginate
   - feedjira
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll/scholar
 
 # Exclude these files from your production _site
 exclude:
