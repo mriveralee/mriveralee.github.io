@@ -85,8 +85,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README.md
   - examples
   - old_site
   - old_pages
   - photo-editing
+  - Rakefile
