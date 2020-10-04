@@ -37,7 +37,7 @@ task :publish => [:generate] do
         system "git add -A ."
         message = "Site updated at #{Time.now.utc}"
         system "git commit -m #{message.inspect}"
-        #system "git push origin master"
+        system "git push origin master"
         system "git checkout source"
         puts "Publishing Completed -- On branch: `#{branch}`"
 
