@@ -29,18 +29,15 @@ task :publish => [:generate] do
     Dir.mktmpdir do |tmp|
         cp_r "_site/.", tmp
 
-        pwd = Dir.pwd
-        #Dir.chdir tmp
         system "git checkout master"
         system "git pull --rebase"
         cp_r "#{tmp}/.", "./"
+
         system "git add -A ."
         message = "Site updated at #{Time.now.utc}"
         system "git commit -m #{message.inspect}"
         system "git push origin master"
         system "git checkout source"
-        puts "Publishing Completed -- On branch: `#{branch}`"
-
-        Dir.chdir pwd
+        puts "Publishing Completed -- Now on branch: `#{branch}`"
     end
 end
