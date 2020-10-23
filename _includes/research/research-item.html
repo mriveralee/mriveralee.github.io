@@ -44,6 +44,13 @@
                 {% endif %}
                 <i class="fa fa-code" aria-hidden="true"></i> <a class="research-meta-link" target="_blank" href="{{ item.sourceCodeUrl }}">Source Code</a>
             {% endif %}
+
+            {% if item.doiUrl %}
+                {% if hasPrevLink %}
+                    <span class="research-meta-separator">{{ site.linkSeparator }}</span>
+                {% endif %}
+                <i class="fa fa-external-link" aria-hidden="true"></i> <a class="research-meta-link" target="_blank" href="{{ item.doiUrl }}">DOI</a>
+            {% endif %}
           </span>
         {% else %}
             Coming soon!
