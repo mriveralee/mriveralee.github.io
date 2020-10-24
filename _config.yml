@@ -9,7 +9,11 @@ twitter_username: mriveralee
 github_username:  mriveralee
 linkedin_username: mikeriv
 google_scholar_url: https://scholar.google.com/citations?hl=en&user=n7yV9DYAAAAJ
-url_for_cv: https://drive.google.com/file/d/1-hlDACHBJj3-M6Vw39yB0xhxuyww3jPD/view?usp=sharing
+url_for_cv: https://drive.google.com/file/d/1fq2VD2Uh7cKkp5sG0HCtsMvs0GAojTCE/view?usp=sharing #https://drive.google.com/file/d/1-hlDACHBJj3-M6Vw39yB0xhxuyww3jPD/view?usp=sharing
+job_materials:
+    url_for_research_statement: https://drive.google.com/file/d/1rzayRl-XBE2ZT7uLFWux2me4c577lg-D/view?usp=sharing
+    url_for_teaching_statement: /
+    url_for_diversity_statement: /
 path_to_cv: /assets/downloads/RIVERA_MICHAEL_CV.pdf
 path_to_research: '/#research-section' #/research/
 path_to_music: '/music/'
@@ -90,3 +94,4 @@ exclude:
   - old_pages
   - photo-editing
   - Rakefile
+  - bios.txt
