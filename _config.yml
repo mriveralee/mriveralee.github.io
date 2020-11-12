@@ -13,7 +13,7 @@ url_for_cv: https://drive.google.com/file/d/1fq2VD2Uh7cKkp5sG0HCtsMvs0GAojTCE/vi
 job_materials:
     url_for_research_statement: https://drive.google.com/file/d/1rzayRl-XBE2ZT7uLFWux2me4c577lg-D/view?usp=sharing
     url_for_teaching_statement: /
-    url_for_diversity_statement: /
+    url_for_diversity_statement: https://drive.google.com/file/d/1UlzIC7yOrZhq0q2oTIiv_9wYu0pfU-bk/view?usp=sharing
 path_to_cv: /assets/downloads/RIVERA_MICHAEL_CV.pdf
 path_to_research: '/#research-section' #/research/
 path_to_music: '/music/'
