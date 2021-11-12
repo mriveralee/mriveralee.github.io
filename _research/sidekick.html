@@ -1,0 +1,60 @@
+---
+layout: project
+published: true
+isPreview: false
+title: "Aided Nonverbal Communication through Physical Expressive Objects"
+authors:
+  - Stephanie Valencia
+  - Mark Steidl
+  - Michael L. Rivera
+  - Cynthia L. Bennett
+  - Jeffrey P. Bigham
+  - Henny Admoni
+
+doiUrl: https://doi.org/10.1145/3441852.3471228
+acmUrl: https://dl.acm.org/doi/10.1145/3441852.3471228
+pdfUrl: assets21-sidekick.pdf
+videoUrl: https://youtu.be/VE7hitnqxK8
+youtubeVideoId: VE7hitnqxK8
+date: 2021-10-11 00:00
+conferenceShortName: ASSETS 2021
+conferenceName: ASSETS 2021
+teaserImageUrl: img/teaser_sidekick-action.png
+teaserTwitterCardUrl: img/teaser_sidekick-action_card.png
+sourceCodeUrl: https://github.com/Svsquared/AAC-sidekick
+
+abstract: >
+    Augmentative and alternative communication (AAC) devices enable speech-based communication, but generating speech is not the only resource needed to have a successful conversation. Being able to signal one wishes to take a turn by raising a hand or providing some other cue is critical in securing a turn to speak. Experienced conversation partners know how to recognize the nonverbal communication an augmented communicator (AC) displays, but these same nonverbal gestures can be hard to interpret by people who meet an AC for the first time. Prior work has identified motion-based AAC as a viable and underexplored modality for increasing ACs’ agency in conversation. We build on this prior work to dig deeper into a particular case study on motion-based AAC by co-designing a physical expressive object to support ACs during conversations. We found that our physical expressive object could support communication with unfamiliar partners. As such, we present our process and resulting lessons on the designed object itself and the co-design process.
+citation: sidekickASSETS2021
+authorDescription: Stephanie Valencia, Mark Steidl, <span class='bold'>Michael L. Rivera</span>, Cynthia L. Bennett, Jeffrey P. Bigham, and Henny Admoni
+awards: [
+    {
+        title: 'Best Student Paper Award',
+        awardType: 'award'
+    },
+    {
+            title: 'Best Paper Nomination',
+            awardType: 'nomination'
+        }
+]
+---
+
+{% include research/abstract.html abstract=page.abstract %}
+
+
+{% if page.youtubeVideoId %}
+  <!--hr class="hr-section-sep" /-->
+  {% include media/youtube.html youtubeVideoId=page.youtubeVideoId %}
+{% endif %}
+
+{% include research/source-code.html sourceCodeUrl=page.sourceCodeUrl %}
+
+<hr class="hr-section-sep" />
+
+{% include research/citation.html
+  pageUrl=page.url
+  citation=page.citation
+  pdfUrl=page.pdfUrl
+  doiUrl=page.doiUrl %}
+
+</div>
