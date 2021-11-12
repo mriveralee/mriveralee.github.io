@@ -58,14 +58,19 @@
     </p>
     {% if item.awards %}
     <p class="research-meta research-meta-awards">
+            {% assign hasPrevAward = false %}
             {% for award in item.awards %}
+                {% if hasPrevAward %}
+                    <br>
+                {% endif %}
                 {% assign awardTitle = award.title %}
                 {% assign awardType = award.awardType %}
                 {% if awardType == "award" %}
                     <i class="research-award-icon fa fa-trophy"></i>
                 {% else if awareType == "nomination" %}
-                    <i class="fa fa-star"></i>
+                    <i class="research-nomination-icon fa fa-star"></i>
                 {% endif %}
+                {% assign hasPrevAward = true %}
                 {{ awardTitle }}
             {% endfor %}
     </p>
