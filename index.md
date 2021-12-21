@@ -3,6 +3,7 @@ layout: default-less-padding
 title: research
 permalink: /
 includedInNav: true
+onJobMarket: false
 
 ---
 <!-- {% include big-name-header.html %} -->
@@ -39,9 +40,11 @@ includedInNav: true
     <br/>
     I completed my Ph.D. and M.S. in Human-Computer Interaction at the <a href="{{ site.cmuHCIIDeptWebsiteUrl }}" target="_blank">Human-Computer Interaction Institute</a> of <a href="{{ site.cmuWebsiteUrl }}" target="_blank">Carnegie Mellon University</a>, where I was advised by <a href="{{ site.scottHudsonUrl }}" target="_blank">Scott Hudson</a> as part of the <a href="{{site.devlabWebsiteUrl }}" target="_blank">DevLab</a>.
     During my Ph.D. program, I interned at <a href="https://www8.hp.com/us/en/hp-labs/index.html" target="_blank">HP Labs</a> in the Immersive Experiences Lab. Before Carnegie Mellon, I completed a M.S.E in <a href="http://cg.cis.upenn.edu/cggt.html" target="_blank">Computer Graphics and Game Technology</a> and a B.S.E in <a href="http://cg.cis.upenn.edu/dmd.html" target="_blank">Digital Media Design</a> at the <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania</a>. I was also previously software engineer at <a href="https://about.fb.com/" target="_blank">Facebook</a>.
-    <br/>
-    <br/>
-    {% include notices/job-notice.html %}
+    {% if onJobMarket %}
+        <br/>
+        <br/>
+        {% include notices/job-notice.html %}
+    {% endif %}
     <br/>
     <br/>
     Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> to learn more about my work.
