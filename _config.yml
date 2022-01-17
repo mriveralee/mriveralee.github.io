@@ -1,6 +1,6 @@
 # Site settings
 title: Michael L. Rivera
-email: mlrivera@andrew.cmu.edu #mike@mikeriv.com
+email: mrivera@colorado.edu #mlrivera@andrew.cmu.edu #mike@mikeriv.com
 description: > # this means to ignore newlines until "baseurl:"
   Technical HCI Researcher
 baseurl:   # the subpath of your site, e.g. /blog/
