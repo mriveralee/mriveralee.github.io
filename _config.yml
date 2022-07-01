@@ -59,7 +59,7 @@ feed:
 paginate: 5
 paginate_path: "/blog/page:num/"
 
-google_analytics: UA-26246031-4
+google_analytics: G-H5RXZ1F5HL
 
 collections:
   portfolio:
