@@ -58,7 +58,8 @@ onJobMarket: false
 
   </article>
 </div>
-
-<hr class="hr-partial-sep" style="margin-top:20px; margin-bottom:20px;" />
+<div class="col">
+    <hr class="hr-partial-sep" style="margin-top:20px; margin-bottom:20px;" />
+</div>
 
 {% include research/research-section.html %}
