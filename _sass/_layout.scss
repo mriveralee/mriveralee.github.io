@@ -684,6 +684,10 @@ vertical-align: middle;
 font-size: $caption_font_size;
 }
 
+.notice-wrapper {
+    text-align: left;
+}
+
 .notice {
     border: 2px dashed $grey-color-light;
     border-radius: 3px;
@@ -693,6 +697,12 @@ font-size: $caption_font_size;
         text-align: left;
     }
 }
+
+.notice-icon {
+    width:25px;
+    display: inline-block;
+}
+
 .job-links {
     a {
         font-size: $small-font-size;
