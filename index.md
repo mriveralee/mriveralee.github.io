@@ -1,6 +1,6 @@
 ---
 layout: default-less-padding
-title: research
+title: about
 permalink: /
 includedInNav: true
 onJobMarket: false
@@ -45,7 +45,7 @@ onJobMarket: false
 					 My work has been recognized with a <a href="https://cccblog.org/2021/07/22/announcing-the-2021-computing-innovation-fellows/#:~:text=CRA%20and%20CCC%20are%20extremely,CIFellowships%20at%2048%20different%20universities" target="_blank">CRA/CCC Computing Innovation Fellowship</a>, a <a href="https://blog.google/outreach-initiatives/education/new-awards-support-future-leaders-computing-research/" target="_blank">Google - CMD-IT Dissertation Fellowship</a>, a Carnegie Mellon University Sansom Endowed Presidential Fellowship, an <a href="https://research.adobe.com/fellowship/previous-fellowship-award-winners/" target="_blank">Adobe Research Fellowship Honorable Mention</a>, and a Xerox Technical Minority Scholarship.
         <br/>
         <br/>
-					Check out my <a href="{{site.path_to_research}}" title="Research">research projects</a> to learn more about my work.
+					Check out the my lab's <a href="https://utilityresearchlab.org/#research" title="Research" target="_blank">research projects</a> to learn more about my work.
 					<span style="clear:both;"/>
         </div>
     </div>
@@ -56,4 +56,4 @@ onJobMarket: false
     <hr class="hr-partial-sep" style="margin-top:20px; margin-bottom:20px;" />
 </div>
 
-{% include research/research-section.html %}
+<!-- {% include research/research-section.html %} -->
